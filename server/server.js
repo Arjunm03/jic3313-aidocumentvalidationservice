@@ -66,7 +66,7 @@ app.get("/verify/:username/pass/:password", async (req, res) => {
   }
   console.log(info);
   const entry = loginInfo.find(info).then((data) => {
-    if(data.length) {
+    if (data.length) {
       res.send(true);
     } else {
       res.send(false);
