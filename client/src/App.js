@@ -4,7 +4,6 @@ import { pdfjs } from "react-pdf";
 import PdfComp from "./PdfComp";
 import './App.css';
 import {useContext,createContext} from 'react';
-import { set } from "mongoose";
 
 
 //START FUNCTIONS FOR LOGIN
