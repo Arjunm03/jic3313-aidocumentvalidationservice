@@ -2,7 +2,9 @@
 
 ## About
 
-### Client: Microsoft
+### Client: 
+
+Microsoft
 
 ### Summary:
 
