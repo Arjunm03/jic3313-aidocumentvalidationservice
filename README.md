@@ -22,7 +22,7 @@ Features:
  - Added functionality to view a file that has been previously uploaded
 
 Known Bugs:
- - After some time, documents are unable to be opened
+ - After documents reach a certain age (typically several hours), they are unable to be opened
 
 Bugfixes:
  - N/A (this is the first release)
