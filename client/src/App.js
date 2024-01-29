@@ -84,6 +84,10 @@ function App() {
     }
   };
 
+  const handleLogout = () => {
+    setLoggedIn(false);
+  };
+
   useEffect(() => {
     getPdf();
   }, []);
@@ -169,7 +173,7 @@ function App() {
           </div>
           <br />
           <div>
-            <button onClick={auth.logout}>Logout</button>
+            <button onClick={handleLogout}>Logout</button>
           </div>
         </div>
         <PdfComp pdfFile={pdfFile}/>
@@ -179,7 +183,7 @@ function App() {
     return (
       <div>
         {auth.user ? (
-          <button onClick={auth.logout}>Logout</button>
+          <button onClick={handleLogout}>Logout</button>
         ) : (
           <form onSubmit={handleLogin}>
             <input type="text" name="username" placeholder="Username" required />
