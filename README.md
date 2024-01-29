@@ -9,7 +9,7 @@ Features:
     - Dummy Account Password: testPassword
  - Added functionality to log out
  - Added functionality to upload and title a file
- - Added functionality to view a file that has been uploaded
+ - Added functionality to view a file that has been previously uploaded
 
 Known Bugs:
  - After some time, documents are unable to be opened
