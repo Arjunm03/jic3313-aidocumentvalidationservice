@@ -5,19 +5,22 @@ app.use(express.json());
 const cors = require("cors");
 app.use(cors());
 app.use("/files", express.static("files"));
+const { MongoClient } = require("mongodb")
 //mongodb connection----------------------------------------------
-const mongoUrl =
-  "mongodb+srv://goelsriman:3311Demo@cluster3311.vqsp41m.mongodb.net/?retryWrites=true&w=majority";
-  
+const mongoUrl ="mongodb+srv://jdUser:Team3313@juniordesigndb.je5c0cg.mongodb.net/?retryWrites=true&w=majority";
 
-mongoose
-  .connect(mongoUrl, {
+mongoose.connect(mongoUrl, {
     useNewUrlParser: true,
   })
   .then(() => {
     console.log("Connected to database");
   })
   .catch((e) => console.log(e));
+
+require("./pdfDetails");
+const PdfSchema = mongoose.model("PdfDetails");
+const loginInfo = mongoose.model("loginInfo");
+
 //multer------------------------------------------------------------
 const multer = require("multer");
 
@@ -30,17 +33,14 @@ const storage = multer.diskStorage({
     cb(null, uniqueSuffix + file.originalname);
   },
 });
-
-require("./pdfDetails");
-const PdfSchema = mongoose.model("PdfDetails");
 const upload = multer({ storage: storage });
 
 app.post("/upload-files", upload.single("file"), async (req, res) => {
-  console.log(req.file);
   const title = req.body.title;
+  const user = req.body.user;
   const fileName = req.file.filename;
   try {
-    await PdfSchema.create({ title: title, pdf: fileName });
+    await PdfSchema.create({ title: title, pdf: fileName, user: [user] });
     res.send({ status: "ok" });
   } catch (error) {
     res.json({ status: error });
@@ -55,11 +55,30 @@ app.get("/get-files", async (req, res) => {
   } catch (error) {}
 });
 
+
+app.get("/verify/:username/pass/:password", async (req, res) => {
+  /*
+  Sends true if the login info is valid, false otherwise. 
+  */
+  const info = {
+    "username" : req.params.username,
+    "password" : req.params.password,
+  }
+  console.log(info);
+  const entry = loginInfo.find(info).then((data) => {
+    if(data.length) {
+      res.send(true);
+    } else {
+      res.send(false);
+    }
+  });
+});
+
 //apis----------------------------------------------------------------
 app.get("/", async (req, res) => {
-  res.send("Success!!!!!!");
+  res.send("Success!");
 });
 
 app.listen(3001, () => {
-  console.log("Server Started");
+  console.log("Server Started on Port 3001");
 });
