@@ -70,11 +70,12 @@ function App() {
   //login 
   const auth = useAuth();
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault(); 
-    const username = e.target.elements.username.value;
-    const password = e.target.elements.password.value;
-    auth.login(username,password);
+    const username = "CHANGE ME";
+    const password = "CHANGE ME";
+    const result = await axios.get("http://localhost:3001/verify/" + username + "/pass/" + password);
+    console.log(result.data)
   };
 
   useEffect(() => {
@@ -91,7 +92,10 @@ function App() {
     const formData = new FormData();
     formData.append("title", title);
     formData.append("file", file);
+    const user = "dummy"; //TODO: Once User is an Actual Variable, Remove this Line
+    formData.append("user", user);
     console.log(title, file);
+    console.log(formData)
 
     const result = await axios.post(
       "http://localhost:3001/upload-files",
