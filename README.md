@@ -12,7 +12,7 @@ This project aims to develop an application that uses the OpenAI API to read thr
 
 ## Release Notes
 
-### V0.1.0
+### Version 0.1.0
 Features:
  - Added functionality to log in (the current application only uses a dummy account, a feature to register an account will be added in a future sprint)
     - Dummy Account Username: testUser
