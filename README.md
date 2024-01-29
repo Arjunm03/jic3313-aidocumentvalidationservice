@@ -1,4 +1,12 @@
-# jic3313-aidocumentvalidationservice
+# Microsoft OpenAI Document Validation Service
+
+## About
+
+### Client: Microsoft
+
+### Summary:
+
+This project aims to develop an application that uses the OpenAI API to read through documents and extract all necessary information. In other words, this application looks to automate the document verification process. The motivation behind this project is the fact that companies spend many man-hours manually reading through and verifying legal documents (including but not limited to W2, I9, etc.), even though this process is quite simple at a conceptual level and has the potential to be automated with the help of modern AI algorithms.   
 
 ## Release Notes
 
