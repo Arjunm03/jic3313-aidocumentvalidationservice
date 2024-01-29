@@ -4,9 +4,10 @@ import { pdfjs } from "react-pdf";
 import PdfComp from "./PdfComp";
 import './App.css';
 import {useContext,createContext} from 'react';
+import { set } from "mongoose";
 
 
-//START FUNCTIONS FOR LOGIN  
+//START FUNCTIONS FOR LOGIN
 const authContext = createContext();
 
 function useAuth() {
@@ -66,16 +67,22 @@ function App() {
   const [file, setFile] = useState("");
   const [allImage, setAllImage] = useState(null);
   const [pdfFile, setPdfFile] = useState(null);
+  const [loggedIn, setLoggedIn] = useState(false);
 
-  //login 
+  //login
   const auth = useAuth();
 
   const handleLogin = async (e) => {
-    e.preventDefault(); 
-    const username = "CHANGE ME";
-    const password = "CHANGE ME";
+    e.preventDefault();
+    const username = e.target.username.value;
+    const password = e.target.password.value;
     const result = await axios.get("http://localhost:3001/verify/" + username + "/pass/" + password);
     console.log(result.data)
+    if (result.data) {
+      setLoggedIn(true);
+    } else {
+      alert("Login info incorrect!");
+    }
   };
 
   useEffect(() => {
@@ -114,69 +121,76 @@ function App() {
     setPdfFile(`http://localhost:3001/files/${pdf}`)
   };
 
-
-  return (
-    <div className="App">
-      <form className="formStyle" onSubmit={submitImage}>
-        <h4>Upload PDF for Document Validation Service</h4>
-        <br />
-        <input
-          type="text"
-          className="form-control"
-          placeholder="Enter Title Here"
-          required
-          onChange={(e) => setTitle(e.target.value)}
-        />
-        <br />
-        <input
-          type="file"
-          class="form-control"
-          accept="application/pdf"
-          required
-          onChange={(e) => setFile(e.target.files[0])}
-        />
-        <br />
-        <button class="btn btn-primary" type="submit">
-          Upload File
-        </button>
-      </form>
-      <br></br>
-      <div className="uploaded">
-        <h4>Previously Uploaded PDFs:</h4>
-        <div className="output-div">
-          {allImage == null
-            ? ""
-            : allImage.map((data) => {
-                return (
-                  <div className="inner-div">
-                    <h6>Title: {data.title} &nbsp; &nbsp;
-                    <button
-                      className="btn btn-primary"
-                      onClick={() => showPdf(data.pdf)}
-                    >
-                      Open {data.title}
-                    </button>
-                    </h6>
-                  </div>
-                );
-              })}
-        </div>
-      </div>
-      <br></br>
-      <div>
-      {auth.user ? (
-        <button onClick={auth.logout}>Logout</button>
-      ) : (
-        <form onSubmit={handleLogin}>
-          <input type="text" name="username" placeholder="Username" required />
-          <input type="password" name="password" placeholder="Password" required />
-          <button type="submit">Login</button>
+  if (loggedIn) {
+    return (
+      <div className="App">
+        <form className="formStyle" onSubmit={submitImage}>
+          <h4>Upload PDF for Document Validation Service</h4>
+          <br />
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Enter Title Here"
+            required
+            onChange={(e) => setTitle(e.target.value)}
+          />
+          <br />
+          <input
+            type="file"
+            class="form-control"
+            accept="application/pdf"
+            required
+            onChange={(e) => setFile(e.target.files[0])}
+          />
+          <br />
+          <button class="btn btn-primary" type="submit">
+            Upload File
+          </button>
         </form>
-      )}
-    </div>
-      <PdfComp pdfFile={pdfFile}/>
-    </div>
-  );
+        <br></br>
+        <div className="uploaded">
+          <h4>Previously Uploaded PDFs:</h4>
+          <div className="output-div">
+            {allImage == null
+              ? ""
+              : allImage.map((data) => {
+                  return (
+                    <div className="inner-div">
+                      <h6>Title: {data.title} &nbsp; &nbsp;
+                      <button
+                        className="btn btn-primary"
+                        onClick={() => showPdf(data.pdf)}
+                      >
+                        Open {data.title}
+                      </button>
+                      </h6>
+                    </div>
+                  );
+                })}
+          </div>
+          <br />
+          <div>
+            <button onClick={auth.logout}>Logout</button>
+          </div>
+        </div>
+        <PdfComp pdfFile={pdfFile}/>
+      </div>
+    );
+  } else {
+    return (
+      <div>
+        {auth.user ? (
+          <button onClick={auth.logout}>Logout</button>
+        ) : (
+          <form onSubmit={handleLogin}>
+            <input type="text" name="username" placeholder="Username" required />
+            <input type="password" name="password" placeholder="Password" required />
+            <button type="submit">Login</button>
+          </form>
+        )}
+      </div>
+    );
+  }
 }
 
 export default App;
