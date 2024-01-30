@@ -181,7 +181,7 @@ function App() {
     );
   } else {
     return (
-      <div>
+      <div className="App">
         {auth.user ? (
           <button onClick={handleLogout}>Logout</button>
         ) : (
