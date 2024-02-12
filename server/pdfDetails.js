@@ -4,7 +4,7 @@ const PdfDetailsSchema = new mongoose.Schema(
   {
     pdf: String,
     title: String,
-    users: [String],
+    user: String,
   },
   { collection: "PdfDetails" }
 );
@@ -12,7 +12,8 @@ const PdfDetailsSchema = new mongoose.Schema(
 const userSchema = new mongoose.Schema(
   {
     username: String,
-    password: String, 
+    password: String,
+    usertype: String,
   },
   { collection: "loginInfo" }
 )

@@ -47,9 +47,20 @@ app.post("/upload-files", upload.single("file"), async (req, res) => {
   }
 });
 
-app.get("/get-files", async (req, res) => {
+app.get("/get-files-admin", async (req, res) => {
   try {
     PdfSchema.find({}).then((data) => {
+      res.send({ status: "ok", data: data });
+    });
+  } catch (error) {}
+});
+
+app.get("/get-files-user/:username", async (req, res) => {
+  const info = {
+    "user" : req.params.username
+  }
+  try {
+    PdfSchema.find(info).then((data) => {
       res.send({ status: "ok", data: data });
     });
   } catch (error) {}
@@ -67,9 +78,10 @@ app.get("/verify/:username/pass/:password", async (req, res) => {
   console.log(info);
   const entry = loginInfo.find(info).then((data) => {
     if (data.length) {
-      res.send(true);
+      console.log(data[0].usertype)
+      res.send({status : true, userType : data[0].usertype});
     } else {
-      res.send(false);
+      res.send({status: false});
     }
   });
 });

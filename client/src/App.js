@@ -62,6 +62,8 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 ).toString();
 
 function App() {
+  var userType = ""
+  var username = ""
   const [title, setTitle] = useState("");
   const [file, setFile] = useState("");
   const [allImage, setAllImage] = useState(null);
@@ -73,11 +75,12 @@ function App() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    const username = e.target.username.value;
+    username = e.target.username.value;
     const password = e.target.password.value;
     const result = await axios.get("http://localhost:3001/verify/" + username + "/pass/" + password);
     console.log(result.data)
-    if (result.data) {
+    if (result.data.status) {
+      userType = result.data.userType
       setLoggedIn(true);
     } else {
       alert("Login info incorrect!");
@@ -92,7 +95,8 @@ function App() {
     getPdf();
   }, []);
   const getPdf = async () => {
-    const result = await axios.get("http://localhost:3001/get-files");
+    console.log("user type is " + userType) // This should print out the user type, but isnt working bc this function is async
+    const result = await axios.get("http://localhost:3001/get-files-admin");
     console.log(result.data.data);
     setAllImage(result.data.data);
   };
