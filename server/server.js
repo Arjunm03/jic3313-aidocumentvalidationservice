@@ -36,11 +36,12 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 app.post("/upload-files", upload.single("file"), async (req, res) => {
+  console.log("Uploading File");
   const title = req.body.title;
   const user = req.body.user;
   const fileName = req.file.filename;
   try {
-    await PdfSchema.create({ title: title, pdf: fileName, user: [user] });
+    await PdfSchema.create({ title: title, pdf: fileName, user: user });
     res.send({ status: "ok" });
   } catch (error) {
     res.json({ status: error });

@@ -102,12 +102,12 @@ function App() {
   };
 
   const submitImage = async (e) => {
+    console.log("Attempting to Submit Image");
     e.preventDefault();
     const formData = new FormData();
     formData.append("title", title);
     formData.append("file", file);
-    const user = "dummy"; //TODO: Once User is an Actual Variable, Remove this Line
-    formData.append("user", user);
+    formData.append("user", username);
     console.log(title, file);
     console.log(formData)
 
