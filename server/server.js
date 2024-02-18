@@ -5,11 +5,13 @@ app.use(express.json());
 const cors = require("cors");
 app.use(cors());
 app.use("/files", express.static("files"));
-const { MongoClient } = require("mongodb")
+const { MongoClient } = require("mongodb");
 //mongodb connection----------------------------------------------
-const mongoUrl ="mongodb+srv://jdUser:Team3313@juniordesigndb.je5c0cg.mongodb.net/?retryWrites=true&w=majority";
+const mongoUrl =
+  "mongodb+srv://jdUser:Team3313@juniordesigndb.je5c0cg.mongodb.net/?retryWrites=true&w=majority";
 
-mongoose.connect(mongoUrl, {
+mongoose
+  .connect(mongoUrl, {
     useNewUrlParser: true,
   })
   .then(() => {
@@ -56,33 +58,37 @@ app.get("/get-files-admin", async (req, res) => {
   } catch (error) {}
 });
 
+app.get("/get-files-user", async (req, res) => {
+  res.send({ status: "ok", data: {} });
+});
+
 app.get("/get-files-user/:username", async (req, res) => {
   const info = {
-    "user" : req.params.username
-  }
+    user: req.params.username,
+  };
   try {
     PdfSchema.find(info).then((data) => {
+      console.log(data);
       res.send({ status: "ok", data: data });
     });
   } catch (error) {}
 });
-
 
 app.get("/verify/:username/pass/:password", async (req, res) => {
   /*
   Sends true if the login info is valid, false otherwise. 
   */
   const info = {
-    "username" : req.params.username,
-    "password" : req.params.password,
-  }
+    username: req.params.username,
+    password: req.params.password,
+  };
   console.log(info);
   const entry = loginInfo.find(info).then((data) => {
     if (data.length) {
-      console.log(data[0].usertype)
-      res.send({status : true, userType : data[0].usertype});
+      console.log(data[0].usertype);
+      res.send({ status: true, userType: data[0].usertype });
     } else {
-      res.send({status: false});
+      res.send({ status: false });
     }
   });
 });

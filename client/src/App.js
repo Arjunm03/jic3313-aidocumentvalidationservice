@@ -2,9 +2,8 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { pdfjs } from "react-pdf";
 import PdfComp from "./PdfComp";
-import './App.css';
-import {useContext,createContext} from 'react';
-
+import "./App.css";
+import { useContext, createContext } from "react";
 
 //START FUNCTIONS FOR LOGIN
 const authContext = createContext();
@@ -27,7 +26,7 @@ const fakeAuth = {
   signout(cb) {
     fakeAuth.isAuthenticated = false;
     //setTimeout(cb, 100); // fake async
-  }
+  },
 };
 
 function useProvideAuth() {
@@ -62,25 +61,25 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 ).toString();
 
 function App() {
-  var userType = ""
-  var username = ""
   const [title, setTitle] = useState("");
   const [file, setFile] = useState("");
-  const [allImage, setAllImage] = useState(null);
+  const [allImage, setAllImage] = useState({});
   const [pdfFile, setPdfFile] = useState(null);
   const [loggedIn, setLoggedIn] = useState(false);
-
-  //login
-  const auth = useAuth();
+  const [username, setUsername] = useState("");
+  const [userType, setUserType] = useState("");
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    username = e.target.username.value;
+    const user = e.target.username.value;
     const password = e.target.password.value;
-    const result = await axios.get("http://localhost:3001/verify/" + username + "/pass/" + password);
-    console.log(result.data)
+    const result = await axios.get(
+      "http://localhost:3001/verify/" + user + "/pass/" + password
+    );
+    console.log(result.data);
     if (result.data.status) {
-      userType = result.data.userType
+      setUserType(result.data.userType);
+      setUsername(user);
       setLoggedIn(true);
     } else {
       alert("Login info incorrect!");
@@ -88,17 +87,26 @@ function App() {
   };
 
   const handleLogout = () => {
+    setUsername("");
+    setUserType("");
+    setPdfFile(null);
+    setAllImage({});
+    setTitle("");
+    setFile("");
     setLoggedIn(false);
   };
 
   useEffect(() => {
     getPdf();
-  }, []);
+  }, [username]);
   const getPdf = async () => {
-    console.log("user type is " + userType) // This should print out the user type, but isnt working bc this function is async
-    const result = await axios.get("http://localhost:3001/get-files-admin");
+    console.log("user type is " + userType); // This should print out the user type, but isnt working bc this function is async
+    const result = await axios.get(
+      `http://localhost:3001/get-files-user/${username}`
+    );
     console.log(result.data.data);
     setAllImage(result.data.data);
+    console.log(allImage);
   };
 
   const submitImage = async (e) => {
@@ -109,7 +117,7 @@ function App() {
     formData.append("file", file);
     formData.append("user", username);
     console.log(title, file);
-    console.log(formData)
+    console.log(formData);
 
     const result = await axios.post(
       "http://localhost:3001/upload-files",
@@ -125,7 +133,7 @@ function App() {
     }
   };
   const showPdf = (pdf) => {
-    setPdfFile(`http://localhost:3001/files/${pdf}`)
+    setPdfFile(`http://localhost:3001/files/${pdf}`);
   };
 
   if (loggedIn) {
@@ -158,18 +166,29 @@ function App() {
         <div className="uploaded">
           <h4>Previously Uploaded PDFs:</h4>
           <div className="output-div">
-            {allImage == null
+            {Object.keys(allImage).length === 0
               ? ""
               : allImage.map((data) => {
                   return (
                     <div className="inner-div">
-                      <h6>Title: {data.title} &nbsp; &nbsp;
-                      <button
-                        className="btn btn-primary"
-                        onClick={() => showPdf(data.pdf)}
-                      >
-                        Open {data.title}
-                      </button>
+                      <h6>
+                        Title: {data.title} &nbsp; &nbsp;
+                        <button
+                          className="btn btn-primary"
+                          onClick={() => showPdf(data.pdf)}
+                        >
+                          Open {data.title}
+                        </button>
+                        <button
+                          className="btn btn-secondary"
+                          onClick={() =>
+                            alert(
+                              "Document being processed! Results will be updated soon!"
+                            )
+                          }
+                        >
+                          Process Document
+                        </button>
                       </h6>
                     </div>
                   );
@@ -180,21 +199,23 @@ function App() {
             <button onClick={handleLogout}>Logout</button>
           </div>
         </div>
-        <PdfComp pdfFile={pdfFile}/>
+        <PdfComp pdfFile={pdfFile} />
       </div>
     );
   } else {
     return (
       <div className="App">
-        {auth.user ? (
-          <button onClick={handleLogout}>Logout</button>
-        ) : (
-          <form onSubmit={handleLogin}>
-            <input type="text" name="username" placeholder="Username" required />
-            <input type="password" name="password" placeholder="Password" required />
-            <button type="submit">Login</button>
-          </form>
-        )}
+        <form onSubmit={handleLogin}>
+          <input type="text" name="username" placeholder="Username" required />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <button type="submit">Login</button>
+        </form>
+        )
       </div>
     );
   }
