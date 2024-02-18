@@ -50,28 +50,29 @@ app.post("/upload-files", upload.single("file"), async (req, res) => {
   }
 });
 
-app.get("/get-files-admin", async (req, res) => {
-  try {
-    PdfSchema.find({}).then((data) => {
-      res.send({ status: "ok", data: data });
-    });
-  } catch (error) {}
-});
-
-app.get("/get-files-user", async (req, res) => {
+app.get("/get-files-user//", async (req, res) => {
   res.send({ status: "ok", data: {} });
 });
 
-app.get("/get-files-user/:username", async (req, res) => {
-  const info = {
-    user: req.params.username,
-  };
-  try {
-    PdfSchema.find(info).then((data) => {
-      console.log(data);
-      res.send({ status: "ok", data: data });
-    });
-  } catch (error) {}
+app.get("/get-files-user/:username/:usertype", async (req, res) => {
+  userType = req.params.usertype
+  if(userType === "user") {
+    const info = {
+      user: req.params.username,
+    };
+    try {
+      PdfSchema.find(info).then((data) => {
+        console.log(data);
+        res.send({ status: "ok", data: data });
+      });
+    } catch (error) {}
+  } else {
+    try {
+      PdfSchema.find({}).then((data) => {
+        res.send({ status: "ok", data: data });
+      });
+    } catch (error) {}
+  }
 });
 
 app.get("/verify/:username/pass/:password", async (req, res) => {

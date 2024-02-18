@@ -87,12 +87,12 @@ function App() {
   };
 
   const handleLogout = () => {
-    // setUsername("");
-    // setUserType("");
-    // setPdfFile(null);
-    // setAllImage({});
-    // setTitle("");
-    // setFile("");
+    setUsername("");
+    setUserType("");
+    setPdfFile(null);
+    setAllImage({});
+    setTitle("");
+    setFile("");
     setLoggedIn(false);
   };
 
@@ -102,7 +102,7 @@ function App() {
   const getPdf = async () => {
     console.log("user type is " + userType); // This should print out the user type, but isnt working bc this function is async
     const result = await axios.get(
-      `http://localhost:3001/get-files-user/${username}`
+      `http://localhost:3001/get-files-user/${username}/${userType}`
     );
     console.log(result.data.data);
     setAllImage(result.data.data);
@@ -178,7 +178,7 @@ function App() {
                           onClick={() => showPdf(data.pdf)}
                         >
                           Open {data.title}
-                        </button>
+                        </button> &nbsp; &nbsp; 
                         <button
                           className="btn btn-secondary"
                           onClick={() =>
@@ -215,7 +215,6 @@ function App() {
           />
           <button type="submit">Login</button>
         </form>
-        )
       </div>
     );
   }
