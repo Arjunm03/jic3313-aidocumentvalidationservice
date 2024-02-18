@@ -50,6 +50,23 @@ app.post("/upload-files", upload.single("file"), async (req, res) => {
   }
 });
 
+app.post("/create-user/:username/:password", async (req, res) => {
+  console.log("Attempting to Create User");
+  const username = req.params.username;
+  const password = req.params.password;
+  const info = {
+    username: username,
+    password: password,
+    usertype: "user",
+  };
+  try {
+    await loginInfo.create(info);
+    res.send({ status: "ok" });
+  } catch (error) {
+    res.json({ status: error });
+  }
+})
+
 app.get("/get-files-user//", async (req, res) => {
   res.send({ status: "ok", data: {} });
 });
