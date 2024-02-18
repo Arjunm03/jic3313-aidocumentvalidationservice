@@ -87,12 +87,12 @@ function App() {
   };
 
   const handleLogout = () => {
-    setUsername("");
-    setUserType("");
-    setPdfFile(null);
-    setAllImage({});
-    setTitle("");
-    setFile("");
+    // setUsername("");
+    // setUserType("");
+    // setPdfFile(null);
+    // setAllImage({});
+    // setTitle("");
+    // setFile("");
     setLoggedIn(false);
   };
 
