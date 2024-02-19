@@ -11,6 +11,21 @@ Microsoft
 This project aims to develop an application that uses the OpenAI API to read through documents and extract all necessary information. In other words, this application looks to automate the document verification process. The motivation behind this project is the fact that companies spend many man-hours manually reading through and verifying legal documents (including but not limited to W2, I9, etc.), even though this process is quite simple at a conceptual level and has the potential to be automated with the help of modern AI algorithms.   
 
 # Release Notes
+## Version 0.2.0
+### Features:
+ - Created admin account types
+    - Dummy Admin Account Username: testAdmin
+    - Dummy Admin Account Password: testPassword
+ - Added functionality to start the validation process
+ - Added functionality for admins to view all files that their corresponding users have uploaded
+ - Added functionality to create a new user account
+
+### Known Bugs:
+ - Uploading duplicate files can sometimes result in the program not knowing which file to open when a file has been selected.
+
+### Bugfixes:
+ - Fixed the issue where files will be unable to get opened after a certain age
+ - Fixed the issue where after a user logs out, the API will throw an error making the 
 
 ## Version 0.1.0
 ### Features:
