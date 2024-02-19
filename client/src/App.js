@@ -127,7 +127,7 @@ function App() {
       }
     );
     console.log(result);
-    if (result.data.status == "ok") {
+    if (result.data.status === "ok") {
       alert("Document Uploaded Successfully!");
       getPdf();
     }
@@ -135,10 +135,13 @@ function App() {
   const showPdf = (pdf) => {
     setPdfFile(`http://localhost:3001/files/${pdf}`);
   };
+  const createAccount = () => {
+
+  }
 
   if (loggedIn) {
     return (
-      <div className="App">
+      <div class="App">
         <form className="formStyle" onSubmit={submitImage}>
           <h4>Upload PDF for Document Validation Service</h4>
           <br />
@@ -195,26 +198,28 @@ function App() {
                 })}
           </div>
           <br />
-          <div>
-            <button onClick={handleLogout}>Logout</button>
-          </div>
         </div>
         <PdfComp pdfFile={pdfFile} />
+        <div>
+            <button onClick={handleLogout}>Logout</button>
+        </div>
       </div>
     );
   } else {
     return (
-      <div className="App">
-        <form onSubmit={handleLogin}>
-          <input type="text" name="username" placeholder="Username" required />
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            required
-          />
-          <button type="submit">Login</button>
-        </form>
+      <div class="App">
+        <div class="center">
+          <form onSubmit={handleLogin}>
+            <h4>Microsoft OpenAI Document Validation Service Login</h4> <br></br> 
+            <input type="text" name="username" placeholder="Username" required /> &nbsp; 
+            <input type="password" name="password" placeholder="Password" required/> <br></br> <br></br>
+            <button type="submit">Login</button>
+          </form>
+          <br></br>
+          <div>
+            <button onClick={createAccount}>Create New Account</button>
+          </div>
+        </div>
       </div>
     );
   }
