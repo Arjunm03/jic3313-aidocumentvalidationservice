@@ -5,6 +5,7 @@ function PdfComp(props) {
   const numPages = 1;
   const [x, setNumPages] = useState();
   const [pageNumber, setPageNumber] = useState(1);
+  console.log(Document)
 
   function onDocumentLoadSuccess({ numPages }) {
     numPages = 1;
@@ -15,6 +16,7 @@ function PdfComp(props) {
            <p>
         Page {pageNumber} of {numPages}
       </p>
+      <div style={{border:"1px solid black"}}>
       <Document file={props.pdfFile} onLoadSuccess={onDocumentLoadSuccess}>
         {Array.apply(null, Array(numPages))
           .map((x, i) => i + 1)
@@ -28,7 +30,7 @@ function PdfComp(props) {
             );
           })}
       </Document>
-   
+      </div>
     </div>
   );
 }

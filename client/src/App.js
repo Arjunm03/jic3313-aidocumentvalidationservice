@@ -71,6 +71,7 @@ function App() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
+    console.log(e.target.value);
     const user = e.target.username.value;
     const password = e.target.password.value;
     const result = await axios.get(
@@ -81,8 +82,9 @@ function App() {
       setUserType(result.data.userType);
       setUsername(user);
       setLoggedIn(true);
+      alert("Successfully Logged in as " + user + "!");
     } else {
-      alert("Login info incorrect!");
+      alert("Login Info Incorrect!");
     }
   };
 
@@ -135,9 +137,20 @@ function App() {
   const showPdf = (pdf) => {
     setPdfFile(`http://localhost:3001/files/${pdf}`);
   };
-  const createAccount = () => {
-
-  }
+  
+  const createAccount = async (e) => {
+    const newUser = e.target.username.value;
+    const newPass = e.target.password.value;
+    const result = await axios.post(`http://localhost:3001/create-user/${newUser}/${newPass}`);
+    console.log(result.data.status);
+    if (result.data.status == `ok`) {
+      alert("New User Created!\nUsername: " + newUser + "\nPassword: " + newPass);
+    } else if (result.data.status == `ex`) {
+      alert("An Account with this Username Already Exists. Please use the Login Form at the Top of the Page.");
+    } else {
+      alert("User Failed to be Created.");
+    }
+  };
 
   if (loggedIn) {
     return (
@@ -186,7 +199,7 @@ function App() {
                           className="btn btn-secondary"
                           onClick={() =>
                             alert(
-                              "Document being processed! Results will be updated soon!"
+                              "Document Being Processed. Results will be updated soon!"
                             )
                           }
                         >
@@ -200,6 +213,7 @@ function App() {
           <br />
         </div>
         <PdfComp pdfFile={pdfFile} />
+        <br></br>
         <div>
             <button onClick={handleLogout}>Logout</button>
         </div>
@@ -209,16 +223,20 @@ function App() {
     return (
       <div class="App">
         <div class="center">
+          <h4>Microsoft OpenAI Document Validation Service Login</h4> <br></br>
           <form onSubmit={handleLogin}>
-            <h4>Microsoft OpenAI Document Validation Service Login</h4> <br></br> 
-            <input type="text" name="username" placeholder="Username" required /> &nbsp; 
-            <input type="password" name="password" placeholder="Password" required/> <br></br> <br></br>
-            <button type="submit">Login</button>
-          </form>
+              <input type="text" name="username" placeholder="Username" required /> &nbsp; 
+              <input type="password" name="password" placeholder="Password" required/> <br></br> <br></br>
+              <button type="submit">Login</button>
+            </form>
+          <br></br> <br></br>
+          No Account Yet? Use the Form Below to Create a New User Account
           <br></br>
-          <div>
-            <button onClick={createAccount}>Create New Account</button>
-          </div>
+          <form onSubmit={createAccount}>
+              <input type="text" name="username" placeholder="New Username" required /> &nbsp; 
+              <input type="password" name="password" placeholder="New Password" required/> <br></br> <br></br>
+              <button type="submit">Create Account</button>
+            </form>
         </div>
       </div>
     );

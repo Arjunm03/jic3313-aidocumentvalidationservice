@@ -51,7 +51,6 @@ app.post("/upload-files", upload.single("file"), async (req, res) => {
 });
 
 app.post("/create-user/:username/:password", async (req, res) => {
-  console.log("Attempting to Create User");
   const username = req.params.username;
   const password = req.params.password;
   const info = {
@@ -60,8 +59,20 @@ app.post("/create-user/:username/:password", async (req, res) => {
     usertype: "user",
   };
   try {
-    await loginInfo.create(info);
-    res.send({ status: "ok" });
+    var check = false;
+    await loginInfo.find({username: username}).then((data) => {
+      if (data.length) {
+        check = true
+      }
+    });
+    if (check) {
+      res.send({ status: "ex" });
+      console.log("Duplicate Detected");
+    } else {
+      await loginInfo.create(info);
+      res.send({ status: "ok" });
+      console.log("Account Created");
+    }
   } catch (error) {
     res.json({ status: error });
   }
