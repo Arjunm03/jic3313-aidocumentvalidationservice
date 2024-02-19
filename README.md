@@ -21,11 +21,11 @@ This project aims to develop an application that uses the OpenAI API to read thr
  - Added functionality to create a new user account
 
 ### Known Bugs:
- - Uploading duplicate files can sometimes result in the program not knowing which file to open when a file has been selected.
+ - When attempting to create an account, sometimes the corresponding alert message (successful creation, duplicate account, failure to be created) will not show up.
 
 ### Bugfixes:
  - Fixed the issue where files will be unable to get opened after a certain age
- - Fixed the issue where after a user logs out, the API will throw an error making the 
+ - Fixed the issue where after a user logs out, files from that user will still be visible if another account is logged into on the same browser.
 
 ## Version 0.1.0
 ### Features:
