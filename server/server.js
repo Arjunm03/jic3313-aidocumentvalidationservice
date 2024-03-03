@@ -6,7 +6,9 @@ const cors = require("cors");
 app.use(cors());
 app.use("/files", express.static("files"));
 const { MongoClient } = require("mongodb");
-//mongodb connection----------------------------------------------
+
+//Connect to DB and define schemas ----------------------------------------------------------------
+
 const mongoUrl =
   "mongodb+srv://jdUser:Team3313@juniordesigndb.je5c0cg.mongodb.net/?retryWrites=true&w=majority";
 
@@ -37,6 +39,8 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage: storage });
 
+// API Post Functions ----------------------------------------------------------------
+
 app.post("/upload-files", upload.single("file"), async (req, res) => {
   console.log("Uploading File");
   const title = req.body.title;
@@ -66,17 +70,19 @@ app.post("/create-user/:username/:password", async (req, res) => {
       }
     });
     if (check) {
-      res.send({ status: "ex" });
+      res.send({ status: `ex` });
       console.log("Duplicate Detected");
     } else {
       await loginInfo.create(info);
-      res.send({ status: "ok" });
+      res.send({ status: `ok` });
       console.log("Account Created");
     }
   } catch (error) {
     res.json({ status: error });
   }
 })
+
+// API Get Functions ----------------------------------------------------------------
 
 app.get("/get-files-user//", async (req, res) => {
   res.send({ status: "ok", data: {} });
@@ -122,7 +128,7 @@ app.get("/verify/:username/pass/:password", async (req, res) => {
   });
 });
 
-//apis----------------------------------------------------------------
+//API Connections ----------------------------------------------------------------
 app.get("/", async (req, res) => {
   res.send("Success!");
 });
