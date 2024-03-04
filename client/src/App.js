@@ -141,15 +141,18 @@ function App() {
   const createAccount = async (e) => {
     const newUser = e.target.username.value;
     const newPass = e.target.password.value;
+    alert("New User Created!\nUsername: " + newUser + "\nPassword: " + newPass);
     const result = await axios.post(`http://localhost:3001/create-user/${newUser}/${newPass}`);
     console.log(result.data.status);
-    if (result.data.status == `ok`) {
-      alert("New User Created!\nUsername: " + newUser + "\nPassword: " + newPass);
-    } else if (result.data.status == `ex`) {
-      alert("An Account with this Username Already Exists. Please use the Login Form at the Top of the Page.");
-    } else {
-      alert("User Failed to be Created.");
-    }
+    // if (result.data.status == `ok`) {
+    //   alert("New User Created!\nUsername: " + newUser + "\nPassword: " + newPass);
+    // } 
+    // else if (result.data.status == `ex`) {
+    //   alert("An Account with this Username Already Exists. Please use the Login Form at the Top of the Page.");
+    // } 
+    // else {
+    //   alert("User Failed to be Created.");
+    // }
   };
 
   if (loggedIn) {

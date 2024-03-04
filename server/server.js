@@ -6,7 +6,9 @@ const cors = require("cors");
 app.use(cors());
 app.use("/files", express.static("files"));
 const { MongoClient } = require("mongodb");
-//mongodb connection----------------------------------------------
+
+//Connect to DB and define schemas ----------------------------------------------------------------
+
 const mongoUrl =
   "mongodb+srv://jdUser:Team3313@juniordesigndb.je5c0cg.mongodb.net/?retryWrites=true&w=majority";
 
@@ -37,6 +39,9 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage: storage });
 
+// API Post Functions ----------------------------------------------------------------
+
+// Upload a file
 app.post("/upload-files", upload.single("file"), async (req, res) => {
   console.log("Uploading File");
   const title = req.body.title;
@@ -50,6 +55,7 @@ app.post("/upload-files", upload.single("file"), async (req, res) => {
   }
 });
 
+// Creates a new user
 app.post("/create-user/:username/:password", async (req, res) => {
   const username = req.params.username;
   const password = req.params.password;
@@ -66,11 +72,11 @@ app.post("/create-user/:username/:password", async (req, res) => {
       }
     });
     if (check) {
-      res.send({ status: "ex" });
+      res.send({ status: `ex` });
       console.log("Duplicate Detected");
     } else {
       await loginInfo.create(info);
-      res.send({ status: "ok" });
+      res.send({ status: `ok` });
       console.log("Account Created");
     }
   } catch (error) {
@@ -78,10 +84,14 @@ app.post("/create-user/:username/:password", async (req, res) => {
   }
 })
 
+// API Get Functions ----------------------------------------------------------------
+
+// Dummy function when the application first starts
 app.get("/get-files-user//", async (req, res) => {
   res.send({ status: "ok", data: {} });
 });
 
+// Gets the files for a user or admin depending on logged in user
 app.get("/get-files-user/:username/:usertype", async (req, res) => {
   userType = req.params.usertype
   if(userType === "user") {
@@ -103,10 +113,8 @@ app.get("/get-files-user/:username/:usertype", async (req, res) => {
   }
 });
 
+// Sends true if the login info is correct, false otherwise
 app.get("/verify/:username/pass/:password", async (req, res) => {
-  /*
-  Sends true if the login info is valid, false otherwise. 
-  */
   const info = {
     username: req.params.username,
     password: req.params.password,
@@ -122,7 +130,7 @@ app.get("/verify/:username/pass/:password", async (req, res) => {
   });
 });
 
-//apis----------------------------------------------------------------
+//API Connections ----------------------------------------------------------------
 app.get("/", async (req, res) => {
   res.send("Success!");
 });
