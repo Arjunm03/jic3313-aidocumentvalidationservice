@@ -133,6 +133,8 @@ app.get("/verify/:username/pass/:password", async (req, res) => {
 });
 
 // API Put Functions ----------------------------------------------------------------
+
+// Update the Validation Results for a given PDF.
 app.put("/update-validation/:status/:description/:docID", async(req, res) =>{
   console.log("Updating Validation Results!");
   PdfSchema.findByIdAndUpdate(req.params.docID, {
