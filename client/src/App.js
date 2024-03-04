@@ -134,8 +134,17 @@ function App() {
       getPdf();
     }
   };
+
   const showPdf = (pdf) => {
     setPdfFile(`http://localhost:3001/files/${pdf}`);
+  };
+
+  const getValidationResults = async (id, pdf) => {
+    const pdfDir = `http://localhost:3001/files/${pdf}`;
+    const stat = "test";
+    const description = "test";
+    const result = await axios.put(`http://localhost:3001/update-validation/${stat}/${description}/${id}`);
+    console.log(result);
   };
   
   const createAccount = async (e) => {
@@ -200,11 +209,7 @@ function App() {
                         </button> &nbsp; &nbsp; 
                         <button
                           className="btn btn-secondary"
-                          onClick={() =>
-                            alert(
-                              "Document Being Processed. Results will be updated soon!"
-                            )
-                          }
+                          onClick={() => getValidationResults(data._id, data.pdf)}
                         >
                           Process Document
                         </button>
