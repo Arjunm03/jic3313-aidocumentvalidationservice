@@ -88,6 +88,7 @@ function App() {
     }
   };
 
+  // Called when the user logs out
   const handleLogout = () => {
     setUsername("");
     setUserType("");
@@ -111,6 +112,7 @@ function App() {
     console.log(allImage);
   };
 
+  // Upload PDF into the backend 
   const submitImage = async (e) => {
     console.log("Attempting to Submit Image");
     e.preventDefault();
@@ -135,10 +137,13 @@ function App() {
     }
   };
 
+  // Display PDF
   const showPdf = (pdf) => {
     setPdfFile(`http://localhost:3001/files/${pdf}`);
   };
 
+
+  // Get the Results for a PDF Validation (TODO)
   const getValidationResults = async (id, pdf) => {
     const pdfDir = `http://localhost:3001/files/${pdf}`;
     const stat = "test";
@@ -147,21 +152,13 @@ function App() {
     console.log(result);
   };
   
+  // Create a new Account
   const createAccount = async (e) => {
     const newUser = e.target.username.value;
     const newPass = e.target.password.value;
     alert("New User Created!\nUsername: " + newUser + "\nPassword: " + newPass);
     const result = await axios.post(`http://localhost:3001/create-user/${newUser}/${newPass}`);
-    console.log(result.data.status);
-    // if (result.data.status == `ok`) {
-    //   alert("New User Created!\nUsername: " + newUser + "\nPassword: " + newPass);
-    // } 
-    // else if (result.data.status == `ex`) {
-    //   alert("An Account with this Username Already Exists. Please use the Login Form at the Top of the Page.");
-    // } 
-    // else {
-    //   alert("User Failed to be Created.");
-    // }
+    alert(`New User Logged!\nUsername: ` + newUser + `\nPassword: ` + newPass);
   };
 
   if (loggedIn) {
