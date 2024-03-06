@@ -16,17 +16,11 @@ function PdfComp(props) {
       </p>
       <div style={{ border: "1px solid black" }}>
         <Document file={props.pdfFile} onLoadSuccess={onDocumentLoadSuccess}>
-          {Array.apply(null, Array(numPages))
-            .map((x, i) => i + 1)
-            .map((page) => {
-              return (
-                <Page
-                  pageNumber={page}
-                  renderTextLayer={false}
-                  renderAnnotationLayer={false}
-                />
-              );
-            })}
+          <Page
+            pageNumber={pageNumber}
+            renderTextLayer={false}
+            renderAnnotationLayer={false}
+          />
         </Document>
       </div>
     </div>
