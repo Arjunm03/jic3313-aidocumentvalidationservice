@@ -112,7 +112,7 @@ function App() {
     console.log(allImage);
   };
 
-  // Upload PDF into the backend 
+  // Upload PDF into the backend
   const submitImage = async (e) => {
     console.log("Attempting to Submit Image");
     e.preventDefault();
@@ -142,22 +142,25 @@ function App() {
     setPdfFile(`http://localhost:3001/files/${pdf}`);
   };
 
-
   // Get the Results for a PDF Validation (TODO)
   const getValidationResults = async (id, pdf) => {
     const pdfDir = `http://localhost:3001/files/${pdf}`;
     const stat = "test";
     const description = "test";
-    const result = await axios.put(`http://localhost:3001/update-validation/${stat}/${description}/${id}`);
-    console.log(result);
+    const result = await axios.put(
+      `http://localhost:3001/update-validation/${stat}/${description}/${id}`
+    );
+    console.log(result.data);
   };
-  
+
   // Create a new Account
   const createAccount = async (e) => {
     const newUser = e.target.username.value;
     const newPass = e.target.password.value;
     alert("New User Created!\nUsername: " + newUser + "\nPassword: " + newPass);
-    const result = await axios.post(`http://localhost:3001/create-user/${newUser}/${newPass}`);
+    const result = await axios.post(
+      `http://localhost:3001/create-user/${newUser}/${newPass}`
+    );
     alert(`New User Logged!\nUsername: ` + newUser + `\nPassword: ` + newPass);
   };
 
@@ -203,13 +206,20 @@ function App() {
                           onClick={() => showPdf(data.pdf)}
                         >
                           Open {data.title}
-                        </button> &nbsp; &nbsp; 
+                        </button>{" "}
+                        &nbsp; &nbsp;
                         <button
                           className="btn btn-secondary"
-                          onClick={() => getValidationResults(data._id, data.pdf)}
+                          onClick={() =>
+                            getValidationResults(data._id, data.pdf)
+                          }
                         >
                           Process Document
-                        </button>
+                        </button>{" "}
+                        &nbsp; &nbsp;
+                        <span class="badge text-bg-info">
+                          {data.validationStatus}
+                        </span>
                       </h6>
                     </div>
                   );
@@ -220,7 +230,7 @@ function App() {
         <PdfComp pdfFile={pdfFile} />
         <br></br>
         <div>
-            <button onClick={handleLogout}>Logout</button>
+          <button onClick={handleLogout}>Logout</button>
         </div>
       </div>
     );
@@ -230,18 +240,42 @@ function App() {
         <div class="center">
           <h4>Microsoft OpenAI Document Validation Service Login</h4> <br></br>
           <form onSubmit={handleLogin}>
-              <input type="text" name="username" placeholder="Username" required /> &nbsp; 
-              <input type="password" name="password" placeholder="Password" required/> <br></br> <br></br>
-              <button type="submit">Login</button>
-            </form>
+            <input
+              type="text"
+              name="username"
+              placeholder="Username"
+              required
+            />{" "}
+            &nbsp;
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+            />{" "}
+            <br></br> <br></br>
+            <button type="submit">Login</button>
+          </form>
           <br></br> <br></br>
           No Account Yet? Use the Form Below to Create a New User Account
           <br></br>
           <form onSubmit={createAccount}>
-              <input type="text" name="username" placeholder="New Username" required /> &nbsp; 
-              <input type="password" name="password" placeholder="New Password" required/> <br></br> <br></br>
-              <button type="submit">Create Account</button>
-            </form>
+            <input
+              type="text"
+              name="username"
+              placeholder="New Username"
+              required
+            />{" "}
+            &nbsp;
+            <input
+              type="password"
+              name="password"
+              placeholder="New Password"
+              required
+            />{" "}
+            <br></br> <br></br>
+            <button type="submit">Create Account</button>
+          </form>
         </div>
       </div>
     );
