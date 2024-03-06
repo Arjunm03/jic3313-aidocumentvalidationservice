@@ -150,7 +150,7 @@ function App() {
     const result = await axios.put(
       `http://localhost:3001/update-validation/${stat}/${description}/${id}`
     );
-    console.log(result);
+    console.log(result.data);
   };
 
   // Create a new Account
@@ -215,7 +215,11 @@ function App() {
                           }
                         >
                           Process Document
-                        </button>
+                        </button>{" "}
+                        &nbsp; &nbsp;
+                        <span class="badge text-bg-info">
+                          {data.validationStatus}
+                        </span>
                       </h6>
                     </div>
                   );
