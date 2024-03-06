@@ -68,6 +68,7 @@ function App() {
   const [loggedIn, setLoggedIn] = useState(false);
   const [username, setUsername] = useState("");
   const [userType, setUserType] = useState("");
+  const API = "http://localhost:3001"
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -75,7 +76,7 @@ function App() {
     const user = e.target.username.value;
     const password = e.target.password.value;
     const result = await axios.get(
-      "http://localhost:3001/verify/" + user + "/pass/" + password
+      API + "/verify/" + user + "/pass/" + password
     );
     console.log(result.data);
     if (result.data.status) {
@@ -105,7 +106,7 @@ function App() {
   const getPdf = async () => {
     console.log("user type is " + userType); // This should print out the user type, but isnt working bc this function is async
     const result = await axios.get(
-      `http://localhost:3001/get-files-user/${username}/${userType}`
+      `${API}/get-files-user/${username}/${userType}`
     );
     console.log(result.data.data);
     setAllImage(result.data.data);
@@ -124,7 +125,7 @@ function App() {
     console.log(formData);
 
     const result = await axios.post(
-      "http://localhost:3001/upload-files",
+      API + "/upload-files",
       formData,
       {
         headers: { "Content-Type": "multipart/form-data" },
@@ -139,21 +140,22 @@ function App() {
 
   // Display PDF
   const showPdf = (pdf) => {
-    setPdfFile(`http://localhost:3001/files/${pdf}`);
+    setPdfFile(`${API}/files/${pdf}`);
   };
 
   // Get the Results for a PDF Validation (TODO)
   const updateValidationResults = async (id, pdf) => {
-    const pdfDir = `http://localhost:3001/files/${pdf}`;
+    const pdfDir = `${API}/files/${pdf}`;
     const stat = "test";
     const description = "test";
     const result = await axios.put(
-      `http://localhost:3001/update-validation/${stat}/${description}/${id}`
+      `${API}/update-validation/${stat}/${description}/${id}`
     );
     console.log(result.data);
     alert(
       `Document Processed Successfully!\nDocument status: ${result.data.validationStatus}\nDocument description: ${result.data.validationDescription}`
     );
+    getPdf();
   };
 
   // Create a new Account
@@ -162,7 +164,7 @@ function App() {
     const newPass = e.target.password.value;
     alert("New User Created!\nUsername: " + newUser + "\nPassword: " + newPass);
     const result = await axios.post(
-      `http://localhost:3001/create-user/${newUser}/${newPass}`
+      `${API}/create-user/${newUser}/${newPass}`
     );
     alert(`New User Logged!\nUsername: ` + newUser + `\nPassword: ` + newPass);
   };
@@ -203,14 +205,14 @@ function App() {
                   return (
                     <div className="inner-div">
                       <h6>
-                        Title: {data.title} &nbsp; &nbsp;
+                        {data.title} &nbsp; &nbsp; &nbsp; &nbsp; 
                         <button
                           className="btn btn-primary"
                           onClick={() => showPdf(data.pdf)}
                         >
                           Open {data.title}
                         </button>{" "}
-                        &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; 
                         <button
                           className="btn btn-secondary"
                           onClick={() =>
@@ -219,7 +221,7 @@ function App() {
                         >
                           Process Document
                         </button>{" "}
-                        &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; Validation Status: &nbsp;
                         <span class="badge text-bg-info">
                           {data.validationStatus}
                         </span>
