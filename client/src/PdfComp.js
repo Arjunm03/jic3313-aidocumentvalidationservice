@@ -14,6 +14,22 @@ function PdfComp(props) {
       <p>
         Page {pageNumber} of {numPages}
       </p>
+      <button
+        type="button"
+        disabled={pageNumber <= 1}
+        onClick={() => setPageNumber(pageNumber - 1)}
+      >
+        Previous
+      </button>
+      <button
+        type="button"
+        disabled={pageNumber >= numPages}
+        onClick={() => setPageNumber(pageNumber + 1)}
+      >
+        Next
+      </button>
+      <br />
+      <br />
       <div style={{ border: "1px solid black" }}>
         <Document file={props.pdfFile} onLoadSuccess={onDocumentLoadSuccess}>
           <Page
