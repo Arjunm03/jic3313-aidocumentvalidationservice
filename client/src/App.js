@@ -227,7 +227,13 @@ function App() {
           </div>
           <br />
         </div>
+        <br></br>
+        <h4>PDF Viewer</h4>
         <PdfComp pdfFile={pdfFile} />
+        <br></br>
+        <button className="btn btn-danger" onClick={() => showPdf(null)}>
+          Close PDF Viewer
+        </button>
         <br></br>
         <div>
           <button onClick={handleLogout}>Logout</button>
