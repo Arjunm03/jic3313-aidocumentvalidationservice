@@ -143,7 +143,7 @@ function App() {
   };
 
   // Get the Results for a PDF Validation (TODO)
-  const getValidationResults = async (id, pdf) => {
+  const updateValidationResults = async (id, pdf) => {
     const pdfDir = `http://localhost:3001/files/${pdf}`;
     const stat = "test";
     const description = "test";
@@ -151,6 +151,9 @@ function App() {
       `http://localhost:3001/update-validation/${stat}/${description}/${id}`
     );
     console.log(result.data);
+    alert(
+      `Document Processed Successfully!\nDocument status: ${result.data.validationStatus}\nDocument description: ${result.data.validationDescription}`
+    );
   };
 
   // Create a new Account
@@ -211,7 +214,7 @@ function App() {
                         <button
                           className="btn btn-secondary"
                           onClick={() =>
-                            getValidationResults(data._id, data.pdf)
+                            updateValidationResults(data._id, data.pdf)
                           }
                         >
                           Process Document
