@@ -6,6 +6,7 @@ const cors = require("cors");
 app.use(cors());
 app.use("/files", express.static("files"));
 const { MongoClient } = require("mongodb");
+const bcrypt = require("bcryptjs");
 
 //Connect to DB and define schemas ----------------------------------------------------------------
 
@@ -61,10 +62,12 @@ app.post("/upload-files", upload.single("file"), async (req, res) => {
 app.post("/create-user/:username/:password", async (req, res) => {
   const username = req.params.username;
   const password = req.params.password;
+  const salt = bcrypt.genSaltSync(10);
   const info = {
     username: username,
-    password: password,
+    password: bcrypt.hashSync(password, salt),
     usertype: "user",
+    salt: salt,
   };
   try {
     var check = false;
