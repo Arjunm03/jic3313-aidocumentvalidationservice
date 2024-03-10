@@ -11,5 +11,13 @@ describe("App", () => {
     expect(loginForm).toBeInTheDocument();
   });
 
+  test("renders upload form when logged in", () => {
+    render(<App />);
+    const loginButton = screen.getByText("Login");
+    fireEvent.click(loginButton);
+    const uploadForm = screen.getByText("Upload PDF for Document Validation Service");
+    expect(uploadForm).toBeInTheDocument();
+  });
+
   
 });
