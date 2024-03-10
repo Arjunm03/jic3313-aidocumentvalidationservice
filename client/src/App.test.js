@@ -43,7 +43,21 @@ describe("App", () => {
       expect(screen.getByText("Validation Status: pending")).toBeInTheDocument();
     });
   });
-
+  test("logs out successfully", async () => {
+    axios.get.mockResolvedValueOnce({ data: { status: true, userType: "admin" } });
+    render(<App />);
+    const usernameInput = screen.getByPlaceholderText("Username");
+    const passwordInput = screen.getByPlaceholderText("Password");
+    const loginButton = screen.getByText("Login");
+    fireEvent.change(usernameInput, { target: { value: "testuser" } });
+    fireEvent.change(passwordInput, { target: { value: "testpassword" } });
+    fireEvent.click(loginButton);
+    const logoutButton = screen.getByText("Logout");
+    fireEvent.click(logoutButton);
+    await waitFor(() => {
+      expect(screen.getByText("Microsoft OpenAI Document Validation Service Login")).toBeInTheDocument();
+    });
+  });
 
   
 });
