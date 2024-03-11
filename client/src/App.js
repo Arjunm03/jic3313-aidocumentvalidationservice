@@ -176,13 +176,17 @@ function App() {
 
   // Create a new Account
   const createAccount = async (e) => {
+    e.preventDefault();
     const newUser = e.target.username.value;
     const newPass = e.target.password.value;
-    alert("New User Created!\nUsername: " + newUser + "\nPassword: " + newPass);
     const result = await axios.post(
       `${API}/create-user/${newUser}/${newPass}`
     );
-    alert(`New User Logged!\nUsername: ` + newUser + `\nPassword: ` + newPass);
+    if (result.data.status === "ok") {
+      alert(`New User Created!\nUsername: ` + newUser + `\nPassword: ` + newPass);
+    } else {
+      alert("Error: Username already exists.");
+    }
     document.getElementById("create-username").value = "";
     document.getElementById("create-password").value = "";
   };
