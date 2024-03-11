@@ -4,9 +4,55 @@
   width: 100%;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e6f7ff;
+}
+
+.container {
+  border: 2px solid #1890ff; /* Blue border */
+  background-color: #fff; /* White background for content */
+  margin: 20px;
+  padding: 20px;
+}
+
+.inner-div {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h6 {
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #1890ff; /* Blue text for headings */
+}
+
+.btn {
+
+  margin: 5px;
+  background-color: #1890ff; /* Blue background for buttons */
+  color: #fff; /* White text for buttons */
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+}
+
+.btn:hover {
+  background-color: #40a9ff; /* Lighter blue when hovering over buttons */
 }
 
 @media (prefers-reduced-motion: no-preference) {
