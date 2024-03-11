@@ -160,6 +160,7 @@ function App() {
 
   // Create a new Account
   const createAccount = async (e) => {
+    e.preventDefault();
     const newUser = e.target.username.value;
     const newPass = e.target.password.value;
     alert("New User Created!\nUsername: " + newUser + "\nPassword: " + newPass);
@@ -205,14 +206,14 @@ function App() {
                   return (
                     <div className="inner-div">
                       <h6>
-                        {data.title} &nbsp; &nbsp; &nbsp; &nbsp; 
+                        {data.title} &nbsp; &nbsp; &nbsp; &nbsp;
                         <button
                           className="btn btn-primary"
                           onClick={() => showPdf(data.pdf)}
                         >
                           Open {data.title}
                         </button>{" "}
-                        &nbsp; &nbsp; &nbsp; &nbsp; 
+                        &nbsp; &nbsp; &nbsp; &nbsp;
                         <button
                           className="btn btn-secondary"
                           onClick={() =>
