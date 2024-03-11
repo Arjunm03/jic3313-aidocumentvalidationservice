@@ -167,6 +167,8 @@ function App() {
       `${API}/create-user/${newUser}/${newPass}`
     );
     alert(`New User Logged!\nUsername: ` + newUser + `\nPassword: ` + newPass);
+    document.getElementById("create-username").value = "";
+    document.getElementById("create-password").value = "";
   };
 
   if (loggedIn) {
@@ -205,14 +207,14 @@ function App() {
                   return (
                     <div className="inner-div">
                       <h6>
-                        {data.title} &nbsp; &nbsp; &nbsp; &nbsp; 
+                        {data.title} &nbsp; &nbsp; &nbsp; &nbsp;
                         <button
                           className="btn btn-primary"
                           onClick={() => showPdf(data.pdf)}
                         >
                           Open {data.title}
                         </button>{" "}
-                        &nbsp; &nbsp; &nbsp; &nbsp; 
+                        &nbsp; &nbsp; &nbsp; &nbsp;
                         <button
                           className="btn btn-secondary"
                           onClick={() =>
@@ -272,6 +274,7 @@ function App() {
           <br></br>
           <form onSubmit={createAccount}>
             <input
+              id="create-username"
               type="text"
               name="username"
               placeholder="New Username"
@@ -279,6 +282,7 @@ function App() {
             />{" "}
             &nbsp;
             <input
+              id="create-password"
               type="password"
               name="password"
               placeholder="New Password"
