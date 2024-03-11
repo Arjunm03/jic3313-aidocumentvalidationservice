@@ -6,6 +6,8 @@ const cors = require("cors");
 app.use(cors());
 app.use("/files", express.static("files"));
 const { MongoClient } = require("mongodb");
+const multer = require("multer")
+const { GridFsStorage } = require("multer-gridfs-storage");
 const bcrypt = require("bcryptjs");
 
 //Connect to DB and define schemas ----------------------------------------------------------------
@@ -13,12 +15,15 @@ const bcrypt = require("bcryptjs");
 const mongoUrl =
   "mongodb+srv://jdUser:Team3313@juniordesigndb.je5c0cg.mongodb.net/?retryWrites=true&w=majority";
 
+let bucket;
+
 mongoose
   .connect(mongoUrl, {
     useNewUrlParser: true,
   })
   .then(() => {
     console.log("Connected to database");
+    bucket = new mongoose.mongo.GridFSBucket(mongoose.connection.db, {bucketName: "PDFBucket"});
   })
   .catch((e) => console.log(e));
 
@@ -27,9 +32,8 @@ const PdfSchema = mongoose.model("PdfDetails");
 const loginInfo = mongoose.model("loginInfo");
 
 //multer------------------------------------------------------------
-const multer = require("multer");
 
-const storage = multer.diskStorage({
+const localStorage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, "./files");
   },
@@ -38,12 +42,34 @@ const storage = multer.diskStorage({
     cb(null, uniqueSuffix + file.originalname);
   },
 });
-const upload = multer({ storage: storage });
+const localUpload = multer({ storage: localStorage });
+
+const mongoUpload = () => {
+  const storage = new GridFsStorage({
+    url: mongoUrl,
+    file: (req, file) => {
+      return new Promise((resolve, _reject) => {
+        const fileInfo = {
+          filename: file.originalname,
+          bucketName: "PDFBucket",
+        };
+        resolve(fileInfo);
+      });
+    },
+  });
+
+  return multer({ storage });
+}
+
+function upload(req, res, next) {
+  mongoUpload().single('file')(req, res, next);
+  localUpload.single('file')(req, res, next);
+}
 
 // API Post Functions ----------------------------------------------------------------
 
 // Upload a file
-app.post("/upload-files", upload.single("file"), async (req, res) => {
+app.post("/upload-files", upload, async (req, res) => {
   console.log("Uploading File");
   const title = req.body.title;
   const user = req.body.user;
