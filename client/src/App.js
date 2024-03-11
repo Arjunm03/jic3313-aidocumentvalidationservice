@@ -4,6 +4,10 @@ import { pdfjs } from "react-pdf";
 import PdfComp from "./PdfComp";
 import "./App.css";
 import { useContext, createContext } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
+//import ResultsPage from "./ResultsPage";
+
 
 //START FUNCTIONS FOR LOGIN
 const authContext = createContext();
@@ -54,6 +58,18 @@ function useProvideAuth() {
 }
 
 //END FUNCTIONS FOR LOGIN
+
+function ResultsPage({ location }) {
+   // Check if location or location.state is undefined
+   //if (!location || !location.state) {
+    //return <div>No data passed.</div>;
+  //}
+
+  //const data = location.state.data;
+  // Display the results here
+  return <div>Results of Authentication Placeholder</div>;
+}
+
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   "pdfjs-dist/build/pdf.worker.min.js",
@@ -171,10 +187,14 @@ function App() {
     } else {
       alert("Error: Username already exists.");
     }
+    document.getElementById("create-username").value = "";
+    document.getElementById("create-password").value = "";
   };
 
   if (loggedIn) {
     return (
+      <div className = "container">
+      <Router>
       <div class="App">
         <form className="formStyle" onSubmit={submitImage}>
           <h4>Upload PDF for Document Validation Service</h4>
@@ -207,7 +227,7 @@ function App() {
               ? ""
               : allImage.map((data) => {
                   return (
-                    <div className="inner-div">
+                    <><div className="inner-div">
                       <h6>
                         {data.title} &nbsp; &nbsp; &nbsp; &nbsp;
                         <button
@@ -219,9 +239,7 @@ function App() {
                         &nbsp; &nbsp; &nbsp; &nbsp;
                         <button
                           className="btn btn-secondary"
-                          onClick={() =>
-                            updateValidationResults(data._id, data.pdf)
-                          }
+                          onClick={() => updateValidationResults(data._id, data.pdf)}
                         >
                           Process Document
                         </button>{" "}
@@ -229,8 +247,21 @@ function App() {
                         <span class="badge text-bg-info">
                           {data.validationStatus}
                         </span>
+                        <Link
+                           to={{
+                            pathname: "/results",
+                            state: { data: data }
+                          }}
+                           className="btn btn-secondary"
+                        >
+                         View Results
+                        </Link>
                       </h6>
                     </div>
+                    <Routes>
+                      <Route path="/results" element={<ResultsPage/>} />
+                    </Routes>
+                    </>
                   );
                 })}
           </div>
@@ -248,6 +279,8 @@ function App() {
           <button onClick={handleLogout}>Logout</button>
         </div>
       </div>
+      </Router>
+      </div> 
     );
   } else {
     return (
@@ -276,6 +309,7 @@ function App() {
           <br></br>
           <form onSubmit={createAccount}>
             <input
+              id="create-username"
               type="text"
               name="username"
               placeholder="New Username"
@@ -283,6 +317,7 @@ function App() {
             />{" "}
             &nbsp;
             <input
+              id="create-password"
               type="password"
               name="password"
               placeholder="New Password"
