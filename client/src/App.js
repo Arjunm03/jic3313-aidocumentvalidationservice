@@ -59,7 +59,7 @@ function useProvideAuth() {
 
 //END FUNCTIONS FOR LOGIN
 
-function ResultsPage({ location }) {
+function ResultsPage({ location, userType }) {
    // Check if location or location.state is undefined
    //if (!location || !location.state) {
     //return <div>No data passed.</div>;
@@ -67,7 +67,12 @@ function ResultsPage({ location }) {
 
   //const data = location.state.data;
   // Display the results here
-  return <div>Results of Authentication Placeholder</div>;
+  return (
+    <>
+      <div>Results of Automatic Validation</div>
+      {userType == "admin" && <div> Special content</div>}
+    </>
+  )
 }
 
 
@@ -225,7 +230,7 @@ function App() {
           <div className="output-div">
             {Object.keys(allImage).length === 0
               ? ""
-              : allImage.map((data) => {
+              : allImage.map((data, key) => {
                   return (
                     <><div className="inner-div">
                       <h6>
@@ -240,6 +245,7 @@ function App() {
                         <button
                           className="btn btn-secondary"
                           onClick={() => updateValidationResults(data._id, data.pdf)}
+                          disabled={userType == "user"}
                         >
                           Process Document
                         </button>{" "}
@@ -249,7 +255,7 @@ function App() {
                         </span>
                         <Link
                            to={{
-                            pathname: "/results",
+                            pathname: `/results_${key}`,
                             state: { data: data }
                           }}
                            className="btn btn-secondary"
@@ -259,7 +265,7 @@ function App() {
                       </h6>
                     </div>
                     <Routes>
-                      <Route path="/results" element={<ResultsPage/>} />
+                      <Route path={`/results_${key}`} element={<ResultsPage userType={userType}/>} />
                     </Routes>
                     </>
                   );
