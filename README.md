@@ -14,7 +14,8 @@ This project aims to develop an application that uses the OpenAI API to read thr
 ## Version 0.3.0
 ### Features:
 - Added functionality which connects the application to the validation model for accepting/rejecting documents
-- Added override button to override a model validation 
+- Added validation results page for both users and verifiers/admins to view model output results
+- Added override button to override a model validation
 
 ### Known Bugs:
 - Accounts created before the encryption algorithm was changed no longer work
