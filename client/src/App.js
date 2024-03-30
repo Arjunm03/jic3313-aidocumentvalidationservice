@@ -179,6 +179,14 @@ function App() {
     getPdf();
   };
 
+  // Delete a Document by ID
+  const deleteDocument = async (id, title) => {
+    const result = await axios.delete(`${API}/delete-doc-byid/${id}`);
+    console.log(result.data)
+    alert(`${title} Successfully Deleted!`);
+    getPdf();
+  };
+
   // Create a new Account
   const createAccount = async (e) => {
     e.preventDefault();
@@ -253,6 +261,7 @@ function App() {
                         <span class="badge text-bg-info">
                           {data.validationStatus}
                         </span>
+                        &nbsp; &nbsp; &nbsp; &nbsp;
                         <Link
                            to={{
                             pathname: `/results_${key}`,
@@ -262,6 +271,13 @@ function App() {
                         >
                          View Results
                         </Link>
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <button
+                          className="btn btn-secondary"
+                          onClick={() => deleteDocument(data._id, data.title)}
+                        >
+                          Delete Document
+                        </button>
                       </h6>
                     </div>
                     <Routes>
