@@ -175,6 +175,21 @@ app.put("/update-validation/:status/:description/:docID", async(req, res) =>{
   });
 })
 
+// API Delete Functions ----------------------------------------------------------------
+
+
+//Delete Document by ID
+app.delete("/delete-doc-byid/:docID", async(req, res) => {
+  console.log(`Deleting Document with ID ${req.params.docID}`);
+  PdfSchema.findByIdAndDelete(req.params.docID).then(data => {
+    if (!data) {
+      res.sendStatus({status : false})
+    } else {
+      res.send(data)
+    }
+  });
+})
+
 //API Connections ----------------------------------------------------------------
 app.get("/", async (req, res) => {
   res.send("Success!");
