@@ -4,6 +4,7 @@ const PdfDetailsSchema = new mongoose.Schema(
   {
     pdf: String,
     title: String,
+    type: String,
     user: String,
     validationStatus: String,
     validationDescription: String,
@@ -18,7 +19,7 @@ const userSchema = new mongoose.Schema(
     usertype: String,
   },
   { collection: "loginInfo" }
-)
+);
 
 mongoose.model("PdfDetails", PdfDetailsSchema);
 mongoose.model("loginInfo", userSchema);
