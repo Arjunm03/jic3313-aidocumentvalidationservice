@@ -74,8 +74,8 @@ app.post("/upload-files", upload.single('file'), async (req, res) => {
   const title = req.body.title;
   const user = req.body.user;
   const fileName = req.file.filename;
-  const status = "N/A";
-  const description = "N/A";
+  const status = "Unprocessed";
+  const description = "Unprocessed";
   try {
     await PdfSchema.create({ title: title, pdf: fileName, user: user,  validationStatus: status, validationDescription: description});
     res.send({ status: "ok" });
@@ -157,6 +157,20 @@ app.get("/verify/:username/pass/:password", async (req, res) => {
     }
   });
 });
+
+app.get("/validation-data/:data", async (req, res) => {
+  // console.log(data);
+
+  PdfSchema.findById(req.params.data).then(data => {
+    if(!data) {
+      res.send({status : false});
+    } else {
+      console.log(data);
+      res.send(data);
+    }
+  });;
+});
+
 
 // API Put Functions ----------------------------------------------------------------
 
