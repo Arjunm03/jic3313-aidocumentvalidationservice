@@ -350,6 +350,10 @@ function App() {
                               <span class="badge text-bg-info">
                                 {data.validationStatus}
                               </span>
+                              &nbsp; &nbsp; &nbsp; &nbsp; Type: &nbsp;
+                              <span class="badge text-bg-info">
+                                {data.type}
+                              </span>
                               &nbsp; &nbsp; &nbsp; &nbsp;
                               <Link
                                 to={{
