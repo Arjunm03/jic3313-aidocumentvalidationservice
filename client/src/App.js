@@ -124,8 +124,9 @@ function App() {
     const formData = new FormData();
     formData.append("title", title);
     formData.append("file", file);
+    formData.append("type", type);
     formData.append("user", username);
-    console.log(title, file);
+    console.log(title, file, type);
     console.log(formData);
 
     const result = await axios.post(API + "/upload-files", formData, {

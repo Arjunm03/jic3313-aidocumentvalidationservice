@@ -7,7 +7,7 @@ app.use(cors());
 app.use("/files", express.static("files"));
 const { MongoClient } = require("mongodb");
 const bcrypt = require("bcryptjs");
-const multer = require("multer")
+const multer = require("multer");
 const { GridFsStorage } = require("multer-gridfs-storage");
 
 //Connect to DB and define schemas ----------------------------------------------------------------
@@ -69,15 +69,24 @@ const upload = multer({ storage: storage });
 // API Post Functions ----------------------------------------------------------------
 
 // Upload a file
-app.post("/upload-files", upload.single('file'), async (req, res) => {
+app.post("/upload-files", upload.single("file"), async (req, res) => {
   console.log("Uploading File");
   const title = req.body.title;
   const user = req.body.user;
   const fileName = req.file.filename;
+  const type = req.body.type;
   const status = "Unprocessed";
   const description = "Unprocessed";
+  console.log(type);
   try {
-    await PdfSchema.create({ title: title, pdf: fileName, user: user,  validationStatus: status, validationDescription: description});
+    await PdfSchema.create({
+      title: title,
+      pdf: fileName,
+      type: type,
+      user: user,
+      validationStatus: status,
+      validationDescription: description,
+    });
     res.send({ status: "ok" });
   } catch (error) {
     res.json({ status: error });
@@ -95,9 +104,9 @@ app.post("/create-user/:username/:password", async (req, res) => {
   };
   try {
     var check = false;
-    await loginInfo.find({username: username}).then((data) => {
+    await loginInfo.find({ username: username }).then((data) => {
       if (data.length) {
-        check = true
+        check = true;
       }
     });
     if (check) {
@@ -111,7 +120,7 @@ app.post("/create-user/:username/:password", async (req, res) => {
   } catch (error) {
     res.json({ status: error });
   }
-})
+});
 
 // API Get Functions ----------------------------------------------------------------
 
@@ -122,8 +131,8 @@ app.get("/get-files-user//", async (req, res) => {
 
 // Gets the files for a user or admin depending on logged in user
 app.get("/get-files-user/:username/:usertype", async (req, res) => {
-  userType = req.params.usertype
-  if(userType === "user") {
+  userType = req.params.usertype;
+  if (userType === "user") {
     const info = {
       user: req.params.username,
     };
@@ -149,7 +158,10 @@ app.get("/verify/:username/pass/:password", async (req, res) => {
   };
   console.log(info);
   const entry = loginInfo.find(info).then((data) => {
-    if (data.length && bcrypt.compareSync(req.params.password, data[0].password)) {
+    if (
+      data.length &&
+      bcrypt.compareSync(req.params.password, data[0].password)
+    ) {
       console.log(data[0].usertype);
       res.send({ status: true, userType: data[0].usertype });
     } else {
@@ -161,48 +173,50 @@ app.get("/verify/:username/pass/:password", async (req, res) => {
 app.get("/validation-data/:data", async (req, res) => {
   // console.log(data);
 
-  PdfSchema.findById(req.params.data).then(data => {
-    if(!data) {
-      res.send({status : false});
+  PdfSchema.findById(req.params.data).then((data) => {
+    if (!data) {
+      res.send({ status: false });
     } else {
       console.log(data);
       res.send(data);
     }
-  });;
+  });
 });
-
 
 // API Put Functions ----------------------------------------------------------------
 
 // Update the Validation Results for a given PDF.
-app.put("/update-validation/:status/:description/:docID", async(req, res) =>{
+app.put("/update-validation/:status/:description/:docID", async (req, res) => {
   console.log("Updating Validation Results!");
-  PdfSchema.findByIdAndUpdate(req.params.docID, {
-    validationStatus : req.params.status,
-    validationDescription : req.params.description
-  }, {new : true}).then(data => {
-    if(!data) {
-      res.send({status : false});
+  PdfSchema.findByIdAndUpdate(
+    req.params.docID,
+    {
+      validationStatus: req.params.status,
+      validationDescription: req.params.description,
+    },
+    { new: true }
+  ).then((data) => {
+    if (!data) {
+      res.send({ status: false });
     } else {
       res.send(data);
     }
   });
-})
+});
 
 // API Delete Functions ----------------------------------------------------------------
 
-
 //Delete Document by ID
-app.delete("/delete-doc-byid/:docID", async(req, res) => {
+app.delete("/delete-doc-byid/:docID", async (req, res) => {
   console.log(`Deleting Document with ID ${req.params.docID}`);
-  PdfSchema.findByIdAndDelete(req.params.docID).then(data => {
+  PdfSchema.findByIdAndDelete(req.params.docID).then((data) => {
     if (!data) {
-      res.sendStatus({status : false})
+      res.sendStatus({ status: false });
     } else {
-      res.send(data)
+      res.send(data);
     }
   });
-})
+});
 
 //API Connections ----------------------------------------------------------------
 app.get("/", async (req, res) => {
