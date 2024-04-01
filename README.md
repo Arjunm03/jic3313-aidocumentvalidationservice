@@ -11,6 +11,21 @@ Microsoft
 This project aims to develop an application that uses the OpenAI API to read through documents and extract all necessary information. In other words, this application looks to automate the document verification process. The motivation behind this project is the fact that companies spend many man-hours manually reading through and verifying legal documents (including but not limited to W2, I9, etc.), even though this process is quite simple at a conceptual level and has the potential to be automated with the help of modern AI algorithms.   
 
 # Release Notes
+## Version 0.4.0
+### Features:
+- Increased accuracy of validation model
+- Users can now specify the type of document they are uploading
+   - Allows the validation model to be more fine-tuned for specific document types
+   - Allows users to filter documents based on type
+- Users can now delete documents that are no longer needed
+
+### Known Bugs:
+- Some files are unable to be deleted
+- Document type is sometimes not stored depending on user input
+
+### Bugfixes:
+- Accounts created before the encryption algorithm was changed now work as intended
+
 ## Version 0.3.0
 ### Features:
 - Added functionality which connects the application to the validation model for accepting/rejecting documents
