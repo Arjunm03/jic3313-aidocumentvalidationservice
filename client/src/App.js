@@ -6,7 +6,6 @@ import "./App.css";
 import { useContext, createContext } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
-//import ResultsPage from "./ResultsPage";
 
 
 //START FUNCTIONS FOR LOGIN
@@ -58,22 +57,6 @@ function useProvideAuth() {
 }
 
 //END FUNCTIONS FOR LOGIN
-
-function ResultsPage({ location, userType }) {
-   // Check if location or location.state is undefined
-   //if (!location || !location.state) {
-    //return <div>No data passed.</div>;
-  //}
-
-  //const data = location.state.data;
-  // Display the results here
-  return (
-    <>
-      <div>Results of Automatic Validation</div>
-      {userType == "admin" && <div> Special content</div>}
-    </>
-  )
-}
 
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
@@ -165,16 +148,16 @@ function App() {
   };
 
   // Get the Results for a PDF Validation (TODO)
-  const updateValidationResults = async (id, pdf) => {
+  const updateValidationResults = async (id, pdf, title) => {
     const pdfDir = `${API}/files/${pdf}`;
-    const stat = "test";
-    const description = "test";
+    const stat = "Accept";
+    const description = "High";
     const result = await axios.put(
       `${API}/update-validation/${stat}/${description}/${id}`
     );
     console.log(result.data);
     alert(
-      `Document Processed Successfully!\nDocument status: ${result.data.validationStatus}\nDocument description: ${result.data.validationDescription}`
+      `${result.data.title} is being processed. \nDocument status: ${result.data.validationStatus}\nDocument description: ${result.data.validationDescription}`
     );
     getPdf();
   };
@@ -203,6 +186,77 @@ function App() {
     document.getElementById("create-username").value = "";
     document.getElementById("create-password").value = "";
   };
+
+  // Get the Results for a PDF Validation (TODO)
+  const overrideValidationResults = async (id, pdf, title, status) => {
+    const pdfDir = `${API}/files/${pdf}`;
+    if (status == "Accept"){
+      const stat = "Reject";
+      const description = "High";
+      const result = await axios.put(
+        `${API}/update-validation/${stat}/${description}/${id}`
+      );
+      console.log(result.data);
+      alert(
+        result.data.title + ` has been overriden to ` + result.data.validationStatus + `ed.`
+      );
+    } else if (status == "Reject") {
+      const stat2 = "Accept";
+      const description = "High";
+      const result = await axios.put(
+        `${API}/update-validation/${stat2}/${description}/${id}`
+      );
+      console.log(result.data);
+      alert(
+        result.data.title + ` has been overriden to ` + result.data.validationStatus + `ed.`
+      );
+    }
+    getPdf();
+  };
+
+  function ResultsPage({ location, userType, data, API}) {
+    // Check if location or location.state is undefined
+    //if (!location || !location.state) {
+      //return <div>No data passed.</div>;
+    //}
+  
+    //const data = location.state.data;
+    // Display the results here
+  
+    const [result, setResult] = useState(null);
+  
+    useEffect(() => {
+  
+      const getData = async() => {
+        const val = await axios.get(
+          `${API}/validation-data/${data._id}`
+        );
+        setResult(val);
+      }
+      getData();
+    }, [])
+  
+    // console.log(result.data.validationStatus);
+    // const result = await axios.get(
+    //   `${API}/validation-data/${data._id}`
+    // );
+    return (
+      <>
+        <div>Results of Automatic Validation: {result ? result.data.validationStatus : "Processing..."}</div>
+        {userType == "admin" && 
+        <>
+        <div> Confidence: {result ? result.data.validationDescription : "Processing..."} </div>
+        <button
+          className="btn btn-primary"
+          onClick={() => overrideValidationResults(result.data._id, result.data.pdf, result.data.title, result.data.validationStatus)}
+          >
+            Override result
+          </button>{" "}
+        </>
+        }
+      </>
+    )
+  }  
 
   if (loggedIn) {
     return (
@@ -252,7 +306,7 @@ function App() {
                         &nbsp; &nbsp; &nbsp; &nbsp;
                         <button
                           className="btn btn-secondary"
-                          onClick={() => updateValidationResults(data._id, data.pdf)}
+                          onClick={() => updateValidationResults(data._id, data.pdf, data.title)}
                           disabled={userType == "user"}
                         >
                           Process Document
@@ -281,7 +335,7 @@ function App() {
                       </h6>
                     </div>
                     <Routes>
-                      <Route path={`/results_${key}`} element={<ResultsPage userType={userType}/>} />
+                      <Route path={`/results_${key}`} element={<ResultsPage userType={userType} data={data} API={API}/>} />
                     </Routes>
                     </>
                   );
