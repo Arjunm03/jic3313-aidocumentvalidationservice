@@ -303,6 +303,7 @@ function App() {
                 required
                 onChange={(e) => setType(e.target.value)}
               >
+                <option selected value=""></option>
                 <option value="Tax W-2">Tax W-2</option>
                 <option value="Tax 1040">Tax 1040</option>
                 <option value="Tax 1098">Tax 1098</option>
