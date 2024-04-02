@@ -1,7 +1,11 @@
 .App {
   text-align: center;
-  height:100%;
+  height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f5; /* Light grey background */
 }
 
 body {
@@ -9,6 +13,36 @@ body {
   margin: 0;
   padding: 0;
   background-color: #e6f7ff;
+  color: #001529; /* Dark blue text */
+}
+
+.submit-button {
+  border-radius: 25px;
+  background-color: #1890ff; /* Blue background for button */
+  color: #fff; /* White text for button */
+  border: none; /* Remove border */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.submit-button2 {
+  border-radius: 25px;
+  background-color: #1890ff; /* Blue background for button */
+  color: #fff; /* White text for button */
+  border: none; /* Remove border */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.submit-button:hover {
+  background-color: #40a9ff; /* Lighter blue when hovering over button */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* More shadow on hover */
 }
 
 .container {
@@ -16,6 +50,8 @@ body {
   background-color: #fff; /* White background for content */
   margin: 20px;
   padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
 }
 
 .inner-div {
@@ -24,6 +60,11 @@ body {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.inner-div:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* More shadow on hover */
 }
 
 h6 {
@@ -40,7 +81,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 5px;
   background-color: #1890ff; /* Blue background for buttons */
   color: #fff; /* White text for buttons */
-  border: none;
+  border: 2px solid #1890ff;
+  border-radius: 25px;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -85,6 +127,55 @@ h1, h2, h3, h4, h5, h6 {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+.login-container {
+  width: 300px;
+  padding: 16px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  text-align: center;
+  color: #1890ff;
+  font-weight: bold;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+
+.login-container button {
+  background-color: #1890ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.login-container button:hover {
+  opacity: 0.8;
+}
+
+
+.logout-button {
+  padding: 15px 30px; /* Increase padding to make the button larger */
+  font-size: 20px; /* Increase font size */
+}
+
+
 
 @keyframes App-logo-spin {
   from {
