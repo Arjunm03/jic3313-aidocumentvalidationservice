@@ -16,28 +16,73 @@ To install and properly run this application, the user must have:
 - Windows 10 or 11 or MacOS 10.10 (or newer) or Ubuntu 16
 - At least 4 GB of RAM and 1 GB of disk space
 - Access to Wi-Fi
+- Javascript
+- npm
 
 ## Dependent Libraries:
-There are no external libraries/tools that are needed, apart from the system pre-requisites. However, the application currently uses the following libraries: react, react-dom, react-pdf, react-router-dom, react-scripts, web-vitals, bcryptjs, cors, dotenv, express, mongoose, multer, multer-gridfs-storage, and nodemon. Instructions to quickly install these dependencies will be addressed in the build instructions.
+There are no external libraries/tools that are needed, apart from the system prerequisites. However, the application currently uses the following libraries: react, react-dom, react-pdf, react-router-dom, react-scripts, web-vitals, bcryptjs, cors, dotenv, express, mongoose, multer, multer-gridfs-storage, and nodemon. Instructions to quickly install these dependencies will be addressed in the "Installation of Application" instructions.
 
 ## Download Instructions:
 There are two ways to download this application:
+
 Git Clone:
+
 Using the terminal, navigate to an appropriate folder to store this project. Then, in the terminal, type the following command: git clone https://github.com/Arjunm03/jic3313-aidocumentvalidationservice.git. The project should then be downloaded into local storage at the specified directory.
 
 ZIP File:
+
 Alternatively, the project's ZIP file can be downloaded. To do this, navigate to the main page of the repository, then click the green "<> Code" button. An option to "Download ZIP" should appear. Click on the option, and the ZIP file should automatically be installed. Unzip the folder at an appropriate directory, and the repository should then be downloaded locally.  
 
 ## Build Instructions:
+No building is needed for this project. After installing, proceed to the "Installation of Application" section to continue setting the application up.
 
 
 ## Installation of Application:
+To install this application, use the following steps:
+
+- Navigate to the server folder.
+- Run the command "npm install -i" to install all dependencies in the server folder.
+- Navigate to the client folder.
+- Run the command "npm install -i" to install all dependencies in the client folder.
 
 ## Run Instructions:
+To run this project, use the following steps:
+
+- Navigate to the server folder.
+- Run the command "node server.js" to start the backend and connect to the database.
+- Navigate to the client folder.
+- Run the command "npm start" to start the front end. The application should then automatically load in your browser.
 
 ## Troubleshooting:
+Below are some common issues when running the application:
+
+- The app is not automatically loading in my browser - simply connect to the port by typing http://localhost:3000/ in the URL bar on your browser.
+- The app is automatically giving me an error when it opens - this is because your backend has not been started. Ensure that you go into the server folder, then run the command "node server.js" and get confirmation that the database has been connected to.
+- My documents are suddenly not uploading - ensure that your connection to the database was not lost. If it was, quit the backend process in your terminal and restart it using the "node server.js" command. This should reconnect to the database and documents should begin to get uploaded again.
 
 # Release Notes
+## Version 1.0.0
+### Features:
+- Users can now be created (Admins cannot be created, as intended)
+- Users can upload documents
+- Users can specify the document type
+- Users can run AI Validation on document
+- Users can see the output of AI Validation
+- Users can override AI Validation
+- Users can filter documents based on type
+- Users can delete documents
+- Users can preview documents before processing them
+- Admins have all functionality that users do but can also view every document the organization has uploaded
+
+### Known Bugs:
+- If the database connection ever drops, the application does not attempt to reconnect and instead will be unable to upload documents until the backend is restarted.
+- Validation model will sometimes hallucinate and return very unreasonable conclusions
+
+### Bugfixes:
+- Document type is now preserved in the database, as intended
+- Specifying document type no longer throws an error
+- Validation model hallucinates far less frequently and assigns very low confidence probabilities when it does hallucinate
+
 ## Version 0.4.0
 ### Features:
 - Increased accuracy of validation model
