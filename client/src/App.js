@@ -66,6 +66,7 @@ function App() {
   const [title, setTitle] = useState("");
   const [type, setType] = useState("");
   const [typeFilter, setTypeFilter] = useState("");
+  const [statusFilter, setStatusFilter] = useState("");
   const [file, setFile] = useState("");
   const [allImage, setAllImage] = useState({});
   const [pdfFile, setPdfFile] = useState(null);
@@ -102,6 +103,7 @@ function App() {
     setTitle("");
     setType("");
     setTypeFilter("");
+    setStatusFilter("");
     setFile("");
     setLoggedIn(false);
   };
@@ -333,82 +335,95 @@ function App() {
                 <option value="Tax 1099">Tax 1099</option>
                 <option value="SF-86">SF-86</option>
               </select>
+              <label for="statusFilter">Filter by status: </label>
+              <select
+                className="statusFilter"
+                required
+                onChange={(e) => setStatusFilter(e.target.value)}
+              >
+                <option selected value=""></option>
+                <option value="Unprocessed">Unprocessed</option>
+                <option value="Passed">Passed</option>
+                <option value="Failed">Failed</option>
+              </select>
               <div className="output-div">
                 {Object.keys(allImage).length === 0
                   ? ""
                   : allImage.map((data, key) => {
-                      if (typeFilter != "" && data.type != typeFilter) {
-                        return;
-                      } 
-                      return (
-                        <>
-                          <div className="inner-div">
-                            <h6>
-                              {data.title} &nbsp; &nbsp; &nbsp; &nbsp;
-                              <button
-                                className="btn btn-primary"
-                                onClick={() => showPdf(data.pdf)}
-                              >
-                                Open {data.title}
-                              </button>{" "}
-                              &nbsp; &nbsp; &nbsp; &nbsp;
-                              <button
-                                className="btn btn-secondary"
-                                onClick={() =>
-                                  updateValidationResults(
-                                    data._id,
-                                    data.pdf,
-                                    data.title
-                                  )
+                      if (
+                        (typeFilter == "" || data.type == typeFilter) &&
+                        (statusFilter == "" ||
+                          data.validationStatus == statusFilter)
+                      )
+                        return (
+                          <>
+                            <div className="inner-div">
+                              <h6>
+                                {data.title} &nbsp; &nbsp; &nbsp; &nbsp;
+                                <button
+                                  className="btn btn-primary"
+                                  onClick={() => showPdf(data.pdf)}
+                                >
+                                  Open {data.title}
+                                </button>{" "}
+                                &nbsp; &nbsp; &nbsp; &nbsp;
+                                <button
+                                  className="btn btn-secondary"
+                                  onClick={() =>
+                                    updateValidationResults(
+                                      data._id,
+                                      data.pdf,
+                                      data.title
+                                    )
+                                  }
+                                  disabled={userType == "user"}
+                                >
+                                  Process Document
+                                </button>{" "}
+                                &nbsp; &nbsp; &nbsp; &nbsp; Validation Status:
+                                &nbsp;
+                                <span class="badge text-bg-info">
+                                  {data.validationStatus}
+                                </span>
+                                &nbsp; &nbsp; &nbsp; &nbsp; Type: &nbsp;
+                                <span class="badge text-bg-info">
+                                  {data.type}
+                                </span>
+                                &nbsp; &nbsp; &nbsp; &nbsp;
+                                <Link
+                                  to={{
+                                    pathname: `/results_${key}`,
+                                    state: { data: data },
+                                  }}
+                                  className="btn btn-secondary"
+                                >
+                                  View Results
+                                </Link>
+                                &nbsp; &nbsp; &nbsp; &nbsp;
+                                <button
+                                  className="btn btn-secondary"
+                                  onClick={() =>
+                                    deleteDocument(data._id, data.title)
+                                  }
+                                >
+                                  Delete Document
+                                </button>
+                              </h6>
+                            </div>
+                            <Routes>
+                              <Route
+                                path={`/results_${key}`}
+                                element={
+                                  <ResultsPage
+                                    userType={userType}
+                                    data={data}
+                                    API={API}
+                                  />
                                 }
-                                disabled={userType == "user"}
-                              >
-                                Process Document
-                              </button>{" "}
-                              &nbsp; &nbsp; &nbsp; &nbsp; Validation Status:
-                              &nbsp;
-                              <span class="badge text-bg-info">
-                                {data.validationStatus}
-                              </span>
-                              &nbsp; &nbsp; &nbsp; &nbsp; Type: &nbsp;
-                              <span class="badge text-bg-info">
-                                {data.type}
-                              </span>
-                              &nbsp; &nbsp; &nbsp; &nbsp;
-                              <Link
-                                to={{
-                                  pathname: `/results_${key}`,
-                                  state: { data: data },
-                                }}
-                                className="btn btn-secondary"
-                              >
-                                View Results
-                              </Link>
-                              &nbsp; &nbsp; &nbsp; &nbsp;
-                              <button
-                                className="btn btn-secondary"
-                                onClick={() =>
-                                  deleteDocument(data._id, data.title)
-                                }
-                              >
-                                Delete Document
-                              </button>
-                            </h6>
-                          </div>
-                          <Routes>
-                            <Route
-                              path={`/results_${key}`}
-                              element={
-                                <ResultsPage
-                                  userType={userType}
-                                  data={data}
-                                  API={API}
-                                />
-                              }
-                            />
-                          </Routes>
-                        </>
-                      );
+                              />
+                            </Routes>
+                          </>
+                        );
                     })}
               </div>
               <br />
