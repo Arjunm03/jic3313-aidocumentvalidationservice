@@ -20,7 +20,7 @@ To install and properly run this application, the user must have:
 - npm
 
 ## Dependent Libraries:
-There are no external libraries/tools that are needed, apart from the system pre-requisites. However, the application currently uses the following libraries: react, react-dom, react-pdf, react-router-dom, react-scripts, web-vitals, bcryptjs, cors, dotenv, express, mongoose, multer, multer-gridfs-storage, and nodemon. Instructions to quickly install these dependencies will be addressed in the "Installation of Application" instructions.
+There are no external libraries/tools that are needed, apart from the system prerequisites. However, the application currently uses the following libraries: react, react-dom, react-pdf, react-router-dom, react-scripts, web-vitals, bcryptjs, cors, dotenv, express, mongoose, multer, multer-gridfs-storage, and nodemon. Instructions to quickly install these dependencies will be addressed in the "Installation of Application" instructions.
 
 ## Download Instructions:
 There are two ways to download this application:
