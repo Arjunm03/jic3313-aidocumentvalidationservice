@@ -72,6 +72,7 @@ Below are some common issues when running the application:
 - Users can filter documents based on type
 - Users can delete documents
 - Users can preview documents before processing them
+- Admins have all functionality that users do but can also view every document the organization has uploaded
 
 ### Known Bugs:
 - If the database connection ever drops, the application does not attempt to reconnect and instead will be unable to upload documents until the backend is restarted.
