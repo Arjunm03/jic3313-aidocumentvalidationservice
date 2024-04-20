@@ -65,6 +65,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 function App() {
   const [title, setTitle] = useState("");
   const [type, setType] = useState("");
+  const [typeFilter, setTypeFilter] = useState("");
   const [file, setFile] = useState("");
   const [allImage, setAllImage] = useState({});
   const [pdfFile, setPdfFile] = useState(null);
@@ -100,6 +101,7 @@ function App() {
     setAllImage({});
     setTitle("");
     setType("");
+    setTypeFilter("");
     setFile("");
     setLoggedIn(false);
   };
@@ -318,10 +320,26 @@ function App() {
             <br></br>
             <div className="uploaded">
               <h4>Previously Uploaded PDFs:</h4>
+              <label for="typeFilter">Filter by type: </label>
+              <select
+                className="typeFilter"
+                required
+                onChange={(e) => setTypeFilter(e.target.value)}
+              >
+                <option selected value=""></option>
+                <option value="Tax W-2">Tax W-2</option>
+                <option value="Tax 1040">Tax 1040</option>
+                <option value="Tax 1098">Tax 1098</option>
+                <option value="Tax 1099">Tax 1099</option>
+                <option value="SF-86">SF-86</option>
+              </select>
               <div className="output-div">
                 {Object.keys(allImage).length === 0
                   ? ""
                   : allImage.map((data, key) => {
+                      if (typeFilter != "" && data.type != typeFilter) {
+                        return;
+                      } 
                       return (
                         <>
                           <div className="inner-div">
