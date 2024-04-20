@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+// Schema for storing PDF Details
 const PdfDetailsSchema = new mongoose.Schema(
   {
     pdf: String,
@@ -12,6 +13,7 @@ const PdfDetailsSchema = new mongoose.Schema(
   { collection: "PdfDetails" }
 );
 
+// Schema for storing user information
 const userSchema = new mongoose.Schema(
   {
     username: String,

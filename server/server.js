@@ -170,6 +170,7 @@ app.get("/verify/:username/pass/:password", async (req, res) => {
   });
 });
 
+// Get Validation Data
 app.get("/validation-data/:data", async (req, res) => {
   // console.log(data);
 
