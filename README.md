@@ -10,6 +10,33 @@ Microsoft
 
 This project aims to develop an application that uses the OpenAI API to read through documents and extract all necessary information. In other words, this application looks to automate the document verification process. The motivation behind this project is the fact that companies spend many man-hours manually reading through and verifying legal documents (including but not limited to W2, I9, etc.), even though this process is quite simple at a conceptual level and has the potential to be automated with the help of modern AI algorithms.   
 
+# Install Guide
+## Pre-Requisites:
+To install and properly run this application, the user must have: 
+- Windows 10 or 11 or MacOS 10.10 (or newer) or Ubuntu 16
+- At least 4 GB of RAM and 1 GB of disk space
+- Access to Wi-Fi
+
+## Dependent Libraries:
+There are no external libraries/tools that are needed, apart from the system pre-requisites. However, the application currently uses the following libraries: react, react-dom, react-pdf, react-router-dom, react-scripts, web-vitals, bcryptjs, cors, dotenv, express, mongoose, multer, multer-gridfs-storage, and nodemon. Instructions to quickly install these dependencies will be addressed in the build instructions.
+
+## Download Instructions:
+There are two ways to download this application:
+Git Clone:
+Using the terminal, navigate to an appropriate folder to store this project. Then, in the terminal, type the following command: git clone https://github.com/Arjunm03/jic3313-aidocumentvalidationservice.git. The project should then be downloaded into local storage at the specified directory.
+
+ZIP File:
+Alternatively, the project's ZIP file can be downloaded. To do this, navigate to the main page of the repository, then click the green "<> Code" button. An option to "Download ZIP" should appear. Click on the option, and the ZIP file should automatically be installed. Unzip the folder at an appropriate directory, and the repository should then be downloaded locally.  
+
+## Build Instructions:
+
+
+## Installation of Application:
+
+## Run Instructions:
+
+## Troubleshooting:
+
 # Release Notes
 ## Version 0.4.0
 ### Features:
