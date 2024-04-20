@@ -16,9 +16,11 @@ To install and properly run this application, the user must have:
 - Windows 10 or 11 or MacOS 10.10 (or newer) or Ubuntu 16
 - At least 4 GB of RAM and 1 GB of disk space
 - Access to Wi-Fi
+- Javascript
+- npm
 
 ## Dependent Libraries:
-There are no external libraries/tools that are needed, apart from the system pre-requisites. However, the application currently uses the following libraries: react, react-dom, react-pdf, react-router-dom, react-scripts, web-vitals, bcryptjs, cors, dotenv, express, mongoose, multer, multer-gridfs-storage, and nodemon. Instructions to quickly install these dependencies will be addressed in the build instructions.
+There are no external libraries/tools that are needed, apart from the system pre-requisites. However, the application currently uses the following libraries: react, react-dom, react-pdf, react-router-dom, react-scripts, web-vitals, bcryptjs, cors, dotenv, express, mongoose, multer, multer-gridfs-storage, and nodemon. Instructions to quickly install these dependencies will be addressed in the "Installation of Application" instructions.
 
 ## Download Instructions:
 There are two ways to download this application:
@@ -32,11 +34,24 @@ ZIP File:
 Alternatively, the project's ZIP file can be downloaded. To do this, navigate to the main page of the repository, then click the green "<> Code" button. An option to "Download ZIP" should appear. Click on the option, and the ZIP file should automatically be installed. Unzip the folder at an appropriate directory, and the repository should then be downloaded locally.  
 
 ## Build Instructions:
+No building is needed for this project. After installing, proceed to the "Installation of Application" section to continue setting the application up.
 
 
 ## Installation of Application:
+To install this application, use the following steps:
+
+- Navigate to the server folder.
+- Run the command "npm install -i" to install all dependencies in the server folder.
+- Navigate to the client folder.
+- Run the command "npm install -i" to install all dependencies in the client folder.
 
 ## Run Instructions:
+To run this project, use the following steps:
+
+- Navigate to the server folder.
+- Run the command "node server.js" to start the backend and connect to the database.
+- Navigate to the client folder.
+- Run the command "npm start" to start the frontend. The application should then automatically load in your browser.
 
 ## Troubleshooting:
 
