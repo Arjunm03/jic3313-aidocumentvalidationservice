@@ -404,7 +404,7 @@ function App() {
             </button>
             <br></br>
             <div>
-              <button onClick={handleLogout}>Logout</button>
+              <button className = "logout-button" onClick={handleLogout}>Logout</button>
             </div>
           </div>
         </Router>
@@ -430,7 +430,7 @@ function App() {
               required
             />{" "}
             <br></br> <br></br>
-            <button type="submit">Login</button>
+            <button className = "submit-button2" type="submit">Login</button>
           </form>
           <br></br> <br></br>
           No Account Yet? Use the Form Below to Create a New User Account
@@ -452,7 +452,7 @@ function App() {
               required
             />{" "}
             <br></br> <br></br>
-            <button type="submit">Create Account</button>
+            <button className = "submit-button" type="submit">Create Account</button>
           </form>
         </div>
       </div>
