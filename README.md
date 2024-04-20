@@ -22,10 +22,13 @@ There are no external libraries/tools that are needed, apart from the system pre
 
 ## Download Instructions:
 There are two ways to download this application:
+
 Git Clone:
+
 Using the terminal, navigate to an appropriate folder to store this project. Then, in the terminal, type the following command: git clone https://github.com/Arjunm03/jic3313-aidocumentvalidationservice.git. The project should then be downloaded into local storage at the specified directory.
 
 ZIP File:
+
 Alternatively, the project's ZIP file can be downloaded. To do this, navigate to the main page of the repository, then click the green "<> Code" button. An option to "Download ZIP" should appear. Click on the option, and the ZIP file should automatically be installed. Unzip the folder at an appropriate directory, and the repository should then be downloaded locally.  
 
 ## Build Instructions:
