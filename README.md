@@ -58,7 +58,7 @@ Below are some common issues when running the application:
 
 - The app is not automatically loading in my browser - simply connect to the port by typing http://localhost:3000/ in the URL bar on your browser.
 - The app is automatically giving me an error when it opens - this is because your backend has not been started. Ensure that you go into the server folder, then run the command "node server.js" and get confirmation that the database has been connected to.
-- My documents are suddenly not uploading - Ensure that your connection to the database was not lost. If it was, quit the backend process in your terminal and restart it using the "node server.js" command. This should reconnect to the database and documents should begin to get uploaded again.
+- My documents are suddenly not uploading - ensure that your connection to the database was not lost. If it was, quit the backend process in your terminal and restart it using the "node server.js" command. This should reconnect to the database and documents should begin to get uploaded again.
 
 # Release Notes
 ## Version 1.0.0
