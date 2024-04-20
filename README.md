@@ -63,10 +63,24 @@ Below are some common issues when running the application:
 # Release Notes
 ## Version 1.0.0
 ### Features:
+- Users can now be created (Admins cannot be created, as intended)
+- Users can upload documents
+- Users can specify the document type
+- Users can run AI Validation on document
+- Users can see the output of AI Validation
+- Users can override AI Validation
+- Users can filter documents based on type
+- Users can delete documents
+- Users can preview documents before processing them
 
 ### Known Bugs:
+- If the database connection ever drops, the application does not attempt to reconnect and instead will be unable to upload documents until the backend is restarted.
+- Validation model will sometimes hallucinate and return very unreasonable conclusions
 
 ### Bugfixes:
+- Document type is now preserved in the database, as intended
+- Specifying document type no longer throws an error
+- Validation model hallucinates far less frequently and assigns very low confidence probabilities when it does hallucinate
 
 ## Version 0.4.0
 ### Features:
