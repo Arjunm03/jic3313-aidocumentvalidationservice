@@ -346,14 +346,16 @@ function App() {
                 <option value="Passed">Passed</option>
                 <option value="Failed">Failed</option>
               </select>
-              <div className="output-div">
+              <div
+                className="output-div"
+                style={{ overflowY: "scroll", maxHeight: "400px" }}
+              >
                 {Object.keys(allImage).length === 0
                   ? ""
                   : allImage.map((data, key) => {
                       if (
                         (typeFilter == "" || data.type == typeFilter) &&
-                        (statusFilter == "" ||
-                          data.validationStatus == statusFilter)
+                        (statusFilter == "" || data.validationStatus == statusFilter)
                       )
                         return (
                           <>
@@ -386,9 +388,7 @@ function App() {
                                   {data.validationStatus}
                                 </span>
                                 &nbsp; &nbsp; &nbsp; &nbsp; Type: &nbsp;
-                                <span class="badge text-bg-info">
-                                  {data.type}
-                                </span>
+                                <span class="badge text-bg-info">{data.type}</span>
                                 &nbsp; &nbsp; &nbsp; &nbsp;
                                 <Link
                                   to={{
@@ -432,12 +432,17 @@ function App() {
             <h4>PDF Viewer</h4>
             <PdfComp pdfFile={pdfFile} />
             <br></br>
-            <button className="btn btn-danger" onClick={() => showPdf(null)}>
+            <button
+              className="btn btn-danger"
+              onClick={() => showPdf(null)}
+            >
               Close PDF Viewer
             </button>
             <br></br>
             <div>
-              <button className = "logout-button" onClick={handleLogout}>Logout</button>
+              <button className="logout-button" onClick={handleLogout}>
+                Logout
+              </button>
             </div>
           </div>
         </Router>
