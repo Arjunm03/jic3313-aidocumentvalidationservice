@@ -1,2 +1,4 @@
 mimesis==16.0.0
 fillpdf==0.7.2
+pandas==2.2.2
+pypdf==4.2.0
