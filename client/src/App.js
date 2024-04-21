@@ -430,6 +430,7 @@ function App() {
             </div>
             <br></br>
             <h4>PDF Viewer</h4>
+            {pdfFile && <p>Currently viewing: {pdfFile}</p>}
             <PdfComp pdfFile={pdfFile} />
             <br></br>
             <button className="btn btn-danger" onClick={() => showPdf(null)}>
@@ -437,7 +438,9 @@ function App() {
             </button>
             <br></br>
             <div>
-              <button className = "logout-button" onClick={handleLogout}>Logout</button>
+              <button className="logout-button" onClick={handleLogout}>
+                Logout
+              </button>
             </div>
           </div>
         </Router>
