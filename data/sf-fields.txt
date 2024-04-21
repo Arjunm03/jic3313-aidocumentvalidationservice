@@ -1,0 +1,4828 @@
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].section5[0].TextField11[0]
+FieldNameAlt: Middle Name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].section5[0].TextField11[1]
+FieldNameAlt: First Name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].section5[0].TextField11[2]
+FieldNameAlt: Complete the following if you have responded 'Yes' to having used other names. Provide your other name(s) used and the period of time you used it/them [for example: your maiden name(s), name(s) by a former marriage, former name(s), alias(es), or nickname(es)]. If you have only initials in your name(s), provide them and indicate &quot;Initial only.&quot; If you do not have a middle name (s), indicate &quot;No Middle Name&quot; (NMN). If you are a &quot;Jr.,&quot; &quot;Sr.,&quot; etc. enter this under Suffix. #1. Last name.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].section5[0].TextField11[3]
+FieldNameAlt: Provide the reason(s) why the name changed
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].section5[0].#area[0].From_Datefield_Name_2[0]
+FieldNameAlt: Time name used. From (month/year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].section5[0].#area[0].To_Datefield_Name_2[0]
+FieldNameAlt: Time name used. To (month/year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Sections1-6[0].section5[0].RadioButtonList[0]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO
+FieldStateOption: Off
+FieldStateOption: YES
+---
+FieldType: Choice
+FieldName: form1[0].Sections1-6[0].section5[0].suffix[0]
+FieldNameAlt: Suffix
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Sections1-6[0].section5[0].#field[7]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Sections1-6[0].section5[0].#field[8]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Sections1-6[0].section5[0].#field[9]
+FieldNameAlt: Present
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Sections1-6[0].section5[0].RadioButtonList[1]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO (If NO, proceed to Section 6)
+FieldStateOption: Off
+FieldStateOption: YES
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].section5[0].TextField11[4]
+FieldNameAlt: Middle Name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].section5[0].TextField11[5]
+FieldNameAlt: First Name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].section5[0].TextField11[6]
+FieldNameAlt: #2. Last name.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].section5[0].TextField11[7]
+FieldNameAlt: Provide the reason(s) why the name changed
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].section5[0].#area[1].From_Datefield_Name_2[1]
+FieldNameAlt: Time name used. From (month/year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].section5[0].#area[1].To_Datefield_Name_2[1]
+FieldNameAlt: Time name used. To (month/year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Sections1-6[0].section5[0].RadioButtonList[2]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO
+FieldStateOption: Off
+FieldStateOption: YES
+---
+FieldType: Choice
+FieldName: form1[0].Sections1-6[0].section5[0].suffix[1]
+FieldNameAlt: Suffix
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Sections1-6[0].section5[0].#field[17]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Sections1-6[0].section5[0].#field[18]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Sections1-6[0].section5[0].#field[19]
+FieldNameAlt: Present
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].section5[0].TextField11[8]
+FieldNameAlt: Middle Name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].section5[0].TextField11[9]
+FieldNameAlt: First Name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].section5[0].TextField11[10]
+FieldNameAlt: #3. Last name.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].section5[0].TextField11[11]
+FieldNameAlt: Provide the reason(s) why the name changed
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].section5[0].#area[2].From_Datefield_Name_2[2]
+FieldNameAlt: Time name used. From (month/year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].section5[0].#area[2].To_Datefield_Name_2[2]
+FieldNameAlt: Time name used. To (month/year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Sections1-6[0].section5[0].RadioButtonList[3]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO
+FieldStateOption: Off
+FieldStateOption: YES
+---
+FieldType: Choice
+FieldName: form1[0].Sections1-6[0].section5[0].suffix[2]
+FieldNameAlt: Suffix
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Sections1-6[0].section5[0].#field[27]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Sections1-6[0].section5[0].#field[28]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Sections1-6[0].section5[0].#field[29]
+FieldNameAlt: Present
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].section5[0].TextField11[12]
+FieldNameAlt: Middle Name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].section5[0].TextField11[13]
+FieldNameAlt: First Name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].section5[0].TextField11[14]
+FieldNameAlt: #4. Last name.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].section5[0].TextField11[15]
+FieldNameAlt: Provide the reason(s) why the name changed
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].section5[0].#area[3].From_Datefield_Name_2[3]
+FieldNameAlt: Time name used. From (month/year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].section5[0].#area[3].To_Datefield_Name_2[3]
+FieldNameAlt: Time name used. To (month/year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Sections1-6[0].section5[0].RadioButtonList[4]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO
+FieldStateOption: Off
+FieldStateOption: YES
+---
+FieldType: Choice
+FieldName: form1[0].Sections1-6[0].section5[0].suffix[3]
+FieldNameAlt: Suffix
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Sections1-6[0].section5[0].#field[37]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Sections1-6[0].section5[0].#field[38]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Sections1-6[0].section5[0].#field[39]
+FieldNameAlt: Present
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].SSN[0]
+FieldNameAlt: Your Social Security Number will auto-fill based on answer provided in section 4.
+FieldFlags: 0
+FieldJustification: Center
+FieldMaxLength: 9
+---
+FieldType: Button
+FieldName: form1[0].Sections1-6[0].RadioButtonList[0]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO
+FieldStateOption: Off
+FieldStateOption: YES
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].TextField11[0]
+FieldNameAlt: Section 1. Full Name. Provide your full name. If you have only initials in your name, provide them and indicate &quot;Initial only&quot;. If you do not have a middle name, indicate &quot;No Middle Name&quot;. If you are a &quot;Jr.,&quot; &quot;Sr.,&quot; etc. enter this under Suffix. Last Name.&#13;
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].TextField11[1]
+FieldNameAlt: First name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].TextField11[2]
+FieldNameAlt: Middle name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].TextField11[3]
+FieldNameAlt: Section 3. Place of Birth. Provide your place of birth. City.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].TextField11[4]
+FieldNameAlt: County
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Sections1-6[0].DropDownList1[0]
+FieldNameAlt: Country (Required)
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Sections1-6[0].School6_State[0]
+FieldNameAlt: State
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Sections1-6[0].CheckBox1[0]
+FieldNameAlt: Not applicable
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].SSN[1]
+FieldNameAlt: Section 4. Social Security Number. Provide your U.S. Social Security Number
+FieldFlags: 0
+FieldJustification: Center
+FieldMaxLength: 9
+---
+FieldType: Button
+FieldName: form1[0].Sections1-6[0].p3-rb3b[0]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: Female
+FieldStateOption: Male
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].TextField11[5]
+FieldNameAlt: Weight (in pounds)
+FieldFlags: 0
+FieldJustification: Left
+FieldMaxLength: 3
+---
+FieldType: Choice
+FieldName: form1[0].Sections1-6[0].DropDownList10[0]
+FieldNameAlt: Hair color
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Sections1-6[0].DropDownList9[0]
+FieldNameAlt: Eye color
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Sections1-6[0].suffix[0]
+FieldNameAlt: Suffix
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Sections1-6[0].DropDownList8[0]
+FieldNameAlt: Section 6. Your Identifying Information. Provide your identifying information. Height (feet).
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Sections1-6[0].DropDownList7[0]
+FieldNameAlt: Height (inches)
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections1-6[0].From_Datefield_Name_2[0]
+FieldNameAlt: Section 2. Date of Birth. Provide your date of birth (month/day/year).
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Sections1-6[0].#field[18]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Sections7-9[0].RadioButtonList[0]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO (If NO, proceed to Section 9)
+FieldStateOption: Off
+FieldStateOption: YES
+---
+FieldType: Text
+FieldName: form1[0].Sections7-9[0].p3-t68[0]
+FieldNameAlt: Provide the following information for the most recent U.S. passport you currently possess. Passport number
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections7-9[0].#area[0].From_Datefield_Name_2[0]
+FieldNameAlt: Issue date (Month/Day/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections7-9[0].#area[0].To_Datefield_Name_2[0]
+FieldNameAlt: Expiration date (Month/Day/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Sections7-9[0].#area[0].#field[4]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Sections7-9[0].TextField11[0]
+FieldNameAlt: Middle name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections7-9[0].TextField11[1]
+FieldNameAlt: Provide the name in which passport was first issued. Last name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections7-9[0].TextField11[2]
+FieldNameAlt: First name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Sections7-9[0].suffix[0]
+FieldNameAlt: Suffix
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Sections7-9[0].RadioButtonList[1]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: 2
+FieldStateOption: 3
+FieldStateOption: 4
+FieldStateOption: I am a U.S. citizen or national by birth in the U.S. or U.S. territory/commonwealth. (Proceed to Section 10)   
+FieldStateOption: I am a U.S. citizen or national by birth, born to U.S. parent(s), in a foreign country. (Complete 9.1) 
+FieldStateOption: I am a derived U.S. citizen. (Complete 9.3) 
+FieldStateOption: I am a naturalized U.S. citizen. (Complete 9.2) 
+FieldStateOption: I am not a U.S. citizen. (Complete 9.4) 
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Sections7-9[0].TextField11[3]
+FieldNameAlt: Explanation
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections7-9[0].TextField11[4]
+FieldNameAlt: Provide document number for U.S. citizen born abroad.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Sections7-9[0].DropDownList12[0]
+FieldNameAlt: Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Sections7-9[0].School6_State[0]
+FieldNameAlt: State
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections7-9[0].TextField11[5]
+FieldNameAlt: Provide the place of issuance. (Provide City and Country if outside the United States; otherwise, provide City and State.) City.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections7-9[0].TextField11[6]
+FieldNameAlt: Middle name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections7-9[0].TextField11[7]
+FieldNameAlt: Provide the name in which document was issued. Last name.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections7-9[0].TextField11[8]
+FieldNameAlt: First name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Sections7-9[0].suffix[1]
+FieldNameAlt: Suffix
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections7-9[0].TextField11[9]
+FieldNameAlt: Middle name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections7-9[0].TextField11[10]
+FieldNameAlt: Provide the name in which the certificate was issued. Last name.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections7-9[0].TextField11[11]
+FieldNameAlt: First name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Sections7-9[0].suffix[2]
+FieldNameAlt: Suffix
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Sections7-9[0].RadioButtonList[2]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO (If NO, proceed to Section 10)
+FieldStateOption: Off
+FieldStateOption: YES
+---
+FieldType: Text
+FieldName: form1[0].Sections7-9[0].SSN[0]
+FieldNameAlt: Your Social Security Number will auto-fill based on answer provided in section 4.
+FieldFlags: 0
+FieldJustification: Center
+FieldMaxLength: 9
+---
+FieldType: Button
+FieldName: form1[0].Sections7-9[0].#field[23]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Sections7-9[0].From_Datefield_Name_2[1]
+FieldNameAlt: Provide the date the document was issued. (Month/Day/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Sections7-9[0].#field[25]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Sections7-9[0].TextField11[12]
+FieldNameAlt: Provide your Certificate of Citizenship number.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections7-9[0].From_Datefield_Name_2[2]
+FieldNameAlt: Provide the date the certificate was issued. (Month/Day/Year). 
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Sections7-9[0].#field[28]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Sections7-9[0].RadioButtonList[3]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: 2
+FieldStateOption: 3
+FieldStateOption: DS 1350 
+FieldStateOption: FS 240 
+FieldStateOption: FS 545 
+FieldStateOption: Off
+FieldStateOption: Other (Provide explanation)
+---
+FieldType: Text
+FieldName: form1[0].Sections7-9[0].TextField11[13]
+FieldNameAlt: Section 7-Your Contact Information. Provide your contact information. Home e-mail address
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections7-9[0].TextField11[14]
+FieldNameAlt: Work e-mail address
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections7-9[0].p3-t68[1]
+FieldNameAlt: Home telephone number
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections7-9[0].TextField11[15]
+FieldNameAlt: Extension
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Sections7-9[0].#field[33]
+FieldNameAlt: Home telephone number: International or D S N phone number
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Sections7-9[0].#field[34]
+FieldNameAlt: Night
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Sections7-9[0].#field[35]
+FieldNameAlt: Day
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Sections7-9[0].p3-t68[2]
+FieldNameAlt: Work telephone number
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections7-9[0].TextField11[16]
+FieldNameAlt: Extension
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Sections7-9[0].#field[38]
+FieldNameAlt: Work telephone number: International or D S N phone number
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Sections7-9[0].#field[39]
+FieldNameAlt: Night
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Sections7-9[0].#field[40]
+FieldNameAlt: Day
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Sections7-9[0].p3-t68[3]
+FieldNameAlt: Mobile/Cell telephone number
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Sections7-9[0].TextField11[17]
+FieldNameAlt: Extension
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Sections7-9[0].#field[43]
+FieldNameAlt: Mobile/Cell telephone number: International or D S N phone number
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Sections7-9[0].#field[44]
+FieldNameAlt: Night
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Sections7-9[0].#field[45]
+FieldNameAlt: Day
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Sections7-9[0].TextField11[18]
+FieldNameAlt: Provide the name of the base.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section9\.1-9\.4[0].School6_State[0]
+FieldNameAlt: State
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].TextField11[0]
+FieldNameAlt: City
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].TextField11[1]
+FieldNameAlt: Middle name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].TextField11[2]
+FieldNameAlt: Provide the name in which the Certificate of Naturalization was issued. Last name.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].TextField11[3]
+FieldNameAlt: First name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section9\.1-9\.4[0].suffix[0]
+FieldNameAlt: Suffix
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].TextField11[4]
+FieldNameAlt: Provide the address of the court that issued the naturalization certificate. Street
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].TextField11[5]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].From_Datefield_Name_2[0]
+FieldNameAlt: Provide the date the naturalization certificate was issued. (Month/Day/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section9\.1-9\.4[0].#field[10]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].TextField11[6]
+FieldNameAlt: Provide your Certificate of Naturalization number (N550 or N570).
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].SSN[0]
+FieldNameAlt: Your Social Security Number will auto-fill based on answer provided in section 4.
+FieldFlags: 0
+FieldJustification: Center
+FieldMaxLength: 9
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].TextField11[7]
+FieldNameAlt: (Provide explanation)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].From_Datefield_Name_2[1]
+FieldNameAlt: Provide your date of entry into the U.S. (Month/Day/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section9\.1-9\.4[0].#field[15]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].TextField11[8]
+FieldNameAlt: 9.4  Complete the following if you answered that you are not a U.S. Citizen. Provide your residence status. 
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].From_Datefield_Name_2[2]
+FieldNameAlt: Provide the date document was issued. (Month/Day/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section9\.1-9\.4[0].#field[18]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].TextField11[9]
+FieldNameAlt: Provide your alien registration number (I-551, I-766)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].TextField11[10]
+FieldNameAlt: Middle name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].TextField11[11]
+FieldNameAlt: Provide the name in which the certificate was issued. Last name.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].TextField11[12]
+FieldNameAlt: First name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section9\.1-9\.4[0].suffix[1]
+FieldNameAlt: Suffix
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].From_Datefield_Name_2[3]
+FieldNameAlt: Provide the expiration date of visa. (Month/Day/Year).
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].TextField11[13]
+FieldNameAlt: Provide document number.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section9\.1-9\.4[0].#field[26]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section9\.1-9\.4[0].#field[27]
+FieldNameAlt: Other (provide explanation)
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section9\.1-9\.4[0].#field[28]
+FieldNameAlt: Provide the basis of naturalization. Based on my own individual naturalization application.
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section9\.1-9\.4[0].RadioButtonList[0]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: 2
+FieldStateOption: 3
+FieldStateOption: 4
+FieldStateOption: 5
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].TextField11[14]
+FieldNameAlt: (Provide explanation)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].TextField11[15]
+FieldNameAlt: Provide the name of the court that issued the Certificate of Naturalization.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].From_Datefield_Name_2[4]
+FieldNameAlt: 9.2 Complete the following if you answered that you are a naturalized U.S. citizen. Provide the date of entry into the U. S. (Month/Day/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section9\.1-9\.4[0].#field[32]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Choice
+FieldName: form1[0].Section9\.1-9\.4[0].School6_State[1]
+FieldNameAlt: State
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].TextField11[16]
+FieldNameAlt: Provide the location of entry into the U.S. City.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section9\.1-9\.4[0].DropDownList15[0]
+FieldNameAlt: Provide country(ies) of prior citizenship.&#10;#1 Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].TextField11[17]
+FieldNameAlt: Provide your U.S. alien registration number on Certificate of Naturalization U S C I S, C I S, or I N S registration, I-551, I-766.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section9\.1-9\.4[0].RadioButtonList[1]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO
+FieldStateOption: Off
+FieldStateOption: YES
+---
+FieldType: Choice
+FieldName: form1[0].Section9\.1-9\.4[0].DropDownList15[1]
+FieldNameAlt:  &#10;#2 Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section9\.1-9\.4[0].School6_State[2]
+FieldNameAlt: State
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].TextField11[18]
+FieldNameAlt: Provide your place of entry in the U.S. City
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section9\.1-9\.4[0].DropDownList15[2]
+FieldNameAlt: Provide country(ies) of citizenship.&#10;#1 Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section9\.1-9\.4[0].DropDownList15[3]
+FieldNameAlt:  &#10;#2 Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].TextField11[19]
+FieldNameAlt: 9.3  Complete the following if you answered that you are a derived U.S. Citizen. Provide your alien registration number (on Certificate of Citizenship &#8212; utilize U S C I S, C I S or I N S registration number).
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].TextField11[20]
+FieldNameAlt: Provide your Permanent Resident Card number (I-551)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].TextField11[21]
+FieldNameAlt: Provide your Certificate of Citizenship number (N560 or N561) 
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].TextField11[22]
+FieldNameAlt: Middle name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].TextField11[23]
+FieldNameAlt: Provide the name in which the document was issued. Last name.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].TextField11[24]
+FieldNameAlt: First name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section9\.1-9\.4[0].suffix[2]
+FieldNameAlt: Suffix
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].TextField11[25]
+FieldNameAlt: (Provide explanation)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section9\.1-9\.4[0].#field[50]
+FieldNameAlt: Other (provide explanation)
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section9\.1-9\.4[0].#field[51]
+FieldNameAlt: Provide the basis of derived citizenship. By operation of law through my U.S. citizen parent.
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].From_Datefield_Name_2[5]
+FieldNameAlt: Provide the date document was issued. (Month/Day/Year).
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section9\.1-9\.4[0].#field[53]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section9\.1-9\.4[0].From_Datefield_Name_2[6]
+FieldNameAlt: Provide the document expiration date (I-766 ONLY). (Month/Day/Year).
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section9\.1-9\.4[0].#field[55]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: 
+FieldName: form1[0].Section9\.1-9\
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: 
+FieldName: form1[0].Section9\
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].RadioButtonList[0]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO (If NO, proceed to 10.2)
+FieldStateOption: Off
+FieldStateOption: YES
+---
+FieldType: Choice
+FieldName: form1[0].Section10\.1-10\.2[0].DropDownList13[0]
+FieldNameAlt: Complete the following if you answered 'Yes' to having EVER held dual/multiple citizenship. Entry #1 Provide country of citizenship.
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].TextField11[0]
+FieldNameAlt: How did you acquire this non-U.S. citizenship you now have or previously had?
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].From_Datefield_Name_2[0]
+FieldNameAlt: During what period of time did you hold citizenship with this country? (Provide the date range that you held this citizenship, beginning with the date it was acquired through its termination or &quot;Present,&quot; whichever is appropriate.) From Date (Month/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].#field[3]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].From_Datefield_Name_2[1]
+FieldNameAlt: To Date (Month/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].#field[5]
+FieldNameAlt: Present
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].#field[6]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].RadioButtonList[1]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO
+FieldStateOption: Off
+FieldStateOption: YES
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].TextField11[1]
+FieldNameAlt: Provide explanation:
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].RadioButtonList[2]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO
+FieldStateOption: Off
+FieldStateOption: YES
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].TextField11[2]
+FieldNameAlt: Provide explanation:
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].TextField11[3]
+FieldNameAlt: How did you acquire this non-U.S. citizenship you now have or previously had?
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].From_Datefield_Name_2[2]
+FieldNameAlt: During what period of time did you hold citizenship with this country? (Provide the date range that you held this citizenship, beginning with the date it was acquired through its termination or &quot;Present,&quot; whichever is appropriate.) From Date (Month/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].#field[11]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].From_Datefield_Name_2[3]
+FieldNameAlt: To Date (Month/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].#field[13]
+FieldNameAlt: Present
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].#field[14]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].RadioButtonList[3]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO
+FieldStateOption: Off
+FieldStateOption: YES
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].TextField11[4]
+FieldNameAlt: Provide explanation:
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].TextField11[5]
+FieldNameAlt: Provide explanation:
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].RadioButtonList[4]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO
+FieldStateOption: Off
+FieldStateOption: YES
+---
+FieldType: Choice
+FieldName: form1[0].Section10\.1-10\.2[0].DropDownList13[1]
+FieldNameAlt: Entry #2 Provide country of citizenship.
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].RadioButtonList[5]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO (If NO, proceed to Section 11)
+FieldStateOption: Off
+FieldStateOption: YES
+---
+FieldType: Choice
+FieldName: form1[0].Section10\.1-10\.2[0].DropDownList14[0]
+FieldNameAlt: Complete the following if you answered 'Yes' to having been issued a passport (or identity card for travel) by a country other than the U.S. Entry #1 Provide country in which the passport (or identity card) was issued.
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].From_Datefield_Name_2[4]
+FieldNameAlt: Provide the date the passport (or identity card) was issued. (month/day/year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].#field[20]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].TextField11[6]
+FieldNameAlt: Provide the place the passport (or identity card) was issued. City
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section10\.1-10\.2[0].DropDownList11[0]
+FieldNameAlt: Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].TextField11[7]
+FieldNameAlt: Provide the name in which passport (or identity card) was issued. Last name.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].TextField11[8]
+FieldNameAlt: First name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].TextField11[9]
+FieldNameAlt: Middle name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section10\.1-10\.2[0].suffix[0]
+FieldNameAlt: Suffix
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].TextField11[10]
+FieldNameAlt: Provide the passport (or identity card) number.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].From_Datefield_Name_2[5]
+FieldNameAlt: Provide the passport (or identity card) expiration date. (Month/Day/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].#field[29]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].RadioButtonList[6]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO
+FieldStateOption: Off
+FieldStateOption: YES
+---
+FieldType: Choice
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row1[0].Cell1[0]
+FieldNameAlt: Provide the countries to which you traveled on this passport (or identity card) and the dates involved with each. Country. Row 1
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row1[0].Cell2[0]
+FieldNameAlt: From date (Month/Year). Row 1
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row1[0].Cell3[0]
+FieldNameAlt: Estimate. Row 1
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row1[0].Cell4[0]
+FieldNameAlt: To date (Month/Year). Row 1
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row1[0].Cell5[0]
+FieldNameAlt: Estimate. Row 1
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row1[0].#field[5]
+FieldNameAlt: Present. Row 1
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Choice
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row2[0].Cell1[0]
+FieldNameAlt: Country. Row 2
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row2[0].Cell2[0]
+FieldNameAlt: From date (Month/Year). Row 2
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row2[0].Cell3[0]
+FieldNameAlt: Estimate. Row 2
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row2[0].Cell4[0]
+FieldNameAlt: To date (Month/Year). Row 2
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row2[0].Cell5[0]
+FieldNameAlt: Estimate. Row 2
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row2[0].#field[5]
+FieldNameAlt: Present. Row 2
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Choice
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row3[0].Cell1[0]
+FieldNameAlt: Country. Row 3
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row3[0].Cell2[0]
+FieldNameAlt: From date (Month/Year). Row 3
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row3[0].Cell3[0]
+FieldNameAlt: Estimate. Row 3
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row3[0].Cell4[0]
+FieldNameAlt: To date (Month/Year). Row 3
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row3[0].Cell5[0]
+FieldNameAlt: Estimate. Row 3
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row3[0].#field[5]
+FieldNameAlt: Present. Row 3
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Choice
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row4[0].Cell1[0]
+FieldNameAlt: Country. Row 4
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row4[0].Cell2[0]
+FieldNameAlt: From date (Month/Year). Row 4
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row4[0].Cell3[0]
+FieldNameAlt: Estimate. Row 4
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row4[0].Cell4[0]
+FieldNameAlt: To date (Month/Year). Row 4
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row4[0].Cell5[0]
+FieldNameAlt: Estimate. Row 4
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row4[0].#field[5]
+FieldNameAlt: Present. Row 4
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Choice
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row5[0].Cell1[0]
+FieldNameAlt: Country. Row 5
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row5[0].Cell2[0]
+FieldNameAlt: From date (Month/Year). Row 5
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row5[0].Cell3[0]
+FieldNameAlt: Estimate. Row 5
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row5[0].Cell4[0]
+FieldNameAlt: To date (Month/Year). Row 5
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row5[0].Cell5[0]
+FieldNameAlt: Estimate. Row 5
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row5[0].#field[5]
+FieldNameAlt: Present. Row 5
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Choice
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row5[1].#field[0]
+FieldNameAlt: Country. Row 6
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row5[1].#field[1]
+FieldNameAlt: From date (Month/Year). Row 6
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row5[1].Cell3[0]
+FieldNameAlt: Estimate. Row 6
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row5[1].#field[3]
+FieldNameAlt: To date (Month/Year). Row 6
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row5[1].Cell5[0]
+FieldNameAlt: Estimate. Row 6
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0].Row5[1].#field[5]
+FieldNameAlt: Present. Row 6
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: 
+FieldName: form1[0].Section10\.1-10\.2[0].Table1[0]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10\.1-10\.2[0].SSN[0]
+FieldNameAlt: Your Social Security Number will auto-fill based on answer provided in section 4.
+FieldFlags: 0
+FieldJustification: Center
+FieldMaxLength: 9
+---
+FieldType: 
+FieldName: form1[0].Section10\.1-10\
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: 
+FieldName: form1[0].Section10\
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10-2[0].SSN[0]
+FieldNameAlt: Your Social Security Number will auto-fill based on answer provided in section 4.
+FieldFlags: 0
+FieldJustification: Center
+FieldMaxLength: 9
+---
+FieldType: Choice
+FieldName: form1[0].Section10-2[0].DropDownList14[0]
+FieldNameAlt: Complete the following if you answered 'Yes' to having been issued a passport (or identity card for travel) by a country other than the U.S.  Entry #2 Provide country in which the passport (or identity card) was issued.
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10-2[0].From_Datefield_Name_2[0]
+FieldNameAlt: Provide the date the passport (or identity card) was issued. (month/day/year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10-2[0].#field[4]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section10-2[0].TextField11[0]
+FieldNameAlt: Provide the place the passport (or identity card) was issued. City
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section10-2[0].DropDownList11[0]
+FieldNameAlt: Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10-2[0].TextField11[1]
+FieldNameAlt: Provide the name in which passport (or identity card) was issued. Last name.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10-2[0].TextField11[2]
+FieldNameAlt: First name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10-2[0].TextField11[3]
+FieldNameAlt: Middle name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section10-2[0].suffix[0]
+FieldNameAlt: Suffix
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10-2[0].TextField11[4]
+FieldNameAlt: Provide the passport (or identity card) number.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10-2[0].From_Datefield_Name_2[1]
+FieldNameAlt: Provide the passport (or identity card) expiration date. (Month/Day/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10-2[0].#field[13]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section10-2[0].RadioButtonList[0]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO
+FieldStateOption: Off
+FieldStateOption: YES
+---
+FieldType: Choice
+FieldName: form1[0].Section10-2[0].Table1[0].Row1[0].Cell1[0]
+FieldNameAlt: Provide the countries to which you traveled on this passport (or identity card) and the dates involved with each. Country. Row 1 
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10-2[0].Table1[0].Row1[0].Cell2[0]
+FieldNameAlt: From date (Month/Year). Row 1
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10-2[0].Table1[0].Row1[0].Cell3[0]
+FieldNameAlt: Estimate. Row 1
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section10-2[0].Table1[0].Row1[0].Cell4[0]
+FieldNameAlt: To date (Month/Year). Row 1
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10-2[0].Table1[0].Row1[0].Cell5[0]
+FieldNameAlt: Estimate. Row 1
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section10-2[0].Table1[0].Row1[0].#field[5]
+FieldNameAlt: Present. Row 1
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Choice
+FieldName: form1[0].Section10-2[0].Table1[0].Row2[0].Cell1[0]
+FieldNameAlt: Country. Row 2
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10-2[0].Table1[0].Row2[0].Cell2[0]
+FieldNameAlt: From date (Month/Year). Row 2
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10-2[0].Table1[0].Row2[0].Cell3[0]
+FieldNameAlt: Estimate. Row 2
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section10-2[0].Table1[0].Row2[0].Cell4[0]
+FieldNameAlt: To date (Month/Year). Row 2
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10-2[0].Table1[0].Row2[0].Cell5[0]
+FieldNameAlt: Estimate. Row 2
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section10-2[0].Table1[0].Row2[0].#field[5]
+FieldNameAlt: Present. Row 2
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Choice
+FieldName: form1[0].Section10-2[0].Table1[0].Row3[0].Cell1[0]
+FieldNameAlt: Country. Row 3
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10-2[0].Table1[0].Row3[0].Cell2[0]
+FieldNameAlt: From date (Month/Year). Row 3
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10-2[0].Table1[0].Row3[0].Cell3[0]
+FieldNameAlt: Estimate. Row 3
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section10-2[0].Table1[0].Row3[0].Cell4[0]
+FieldNameAlt: To date (Month/Year). Row 3
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10-2[0].Table1[0].Row3[0].Cell5[0]
+FieldNameAlt: Estimate. Row 3
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section10-2[0].Table1[0].Row3[0].#field[5]
+FieldNameAlt: Present. Row 3
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Choice
+FieldName: form1[0].Section10-2[0].Table1[0].Row4[0].Cell1[0]
+FieldNameAlt: Country. Row 4
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10-2[0].Table1[0].Row4[0].Cell2[0]
+FieldNameAlt: From date (Month/Year). Row 4
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10-2[0].Table1[0].Row4[0].Cell3[0]
+FieldNameAlt: Estimate. Row 4
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section10-2[0].Table1[0].Row4[0].Cell4[0]
+FieldNameAlt: To date (Month/Year). Row 4
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10-2[0].Table1[0].Row4[0].Cell5[0]
+FieldNameAlt: Estimate. Row 4
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section10-2[0].Table1[0].Row4[0].#field[5]
+FieldNameAlt: Present. Row 4
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Choice
+FieldName: form1[0].Section10-2[0].Table1[0].Row5[0].Cell1[0]
+FieldNameAlt: Country. Row 5
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10-2[0].Table1[0].Row5[0].Cell2[0]
+FieldNameAlt: From date (Month/Year). Row 5
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10-2[0].Table1[0].Row5[0].Cell3[0]
+FieldNameAlt: Estimate. Row 5
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section10-2[0].Table1[0].Row5[0].Cell4[0]
+FieldNameAlt: To date (Month/Year). Row 5
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10-2[0].Table1[0].Row5[0].Cell5[0]
+FieldNameAlt: Estimate. Row 5
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section10-2[0].Table1[0].Row5[0].#field[5]
+FieldNameAlt: Present. Row 5
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Choice
+FieldName: form1[0].Section10-2[0].Table1[0].Row5[1].#field[0]
+FieldNameAlt: Country. Row 6
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section10-2[0].Table1[0].Row5[1].#field[1]
+FieldNameAlt: From date (Month/Year). Row 6
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10-2[0].Table1[0].Row5[1].Cell3[0]
+FieldNameAlt: Estimate. Row 6
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section10-2[0].Table1[0].Row5[1].#field[3]
+FieldNameAlt: To date (Month/Year). Row 6
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section10-2[0].Table1[0].Row5[1].Cell5[0]
+FieldNameAlt: Estimate. Row 6
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section10-2[0].Table1[0].Row5[1].#field[5]
+FieldNameAlt: Present. Row 6
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: 
+FieldName: form1[0].Section10-2[0].Table1[0]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].SSN[0]
+FieldNameAlt: Your Social Security Number will auto-fill based on answer provided in section 4.
+FieldFlags: 0
+FieldJustification: Center
+FieldMaxLength: 9
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].p3-t68[0]
+FieldNameAlt: Evening telephone number
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].TextField11[0]
+FieldNameAlt: Extension
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11[0].#field[4]
+FieldNameAlt: International or D S N phone number
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11[0].#field[5]
+FieldNameAlt: Provide the following contact information for this person. I don't know.
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].p3-t68[1]
+FieldNameAlt: Daytime telephone number
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].TextField11[1]
+FieldNameAlt: Extension
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].p3-t68[2]
+FieldNameAlt: Cell/mobile telephone number
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].TextField11[2]
+FieldNameAlt: Extension
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11[0].#field[10]
+FieldNameAlt: International or D S N phone number
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11[0].#field[11]
+FieldNameAlt: I don't know
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11[0].#field[12]
+FieldNameAlt: International or D S N phone number
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11[0].#field[13]
+FieldNameAlt: I don't know
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].From_Datefield_Name_2[0]
+FieldNameAlt: Section 11. Where you have lived. Enter residence information. Entry #1 Provide dates of residence. From Date (Month/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11[0].#field[15]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].From_Datefield_Name_2[1]
+FieldNameAlt: To Date (Month/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11[0].#field[17]
+FieldNameAlt: Present
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11[0].#field[18]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11[0].RadioButtonList[0]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: 2
+FieldStateOption: 3
+FieldStateOption: 4
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].TextField12[0]
+FieldNameAlt: (Provide explanation)
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].TextField11[3]
+FieldNameAlt: Provide the street address. (Provide City and Country if outside the United States; otherwise, provide City, State and Zip Code.) Street address
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].TextField11[4]
+FieldNameAlt: City
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11[0].School6_State[0]
+FieldNameAlt: State
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11[0].DropDownList5[0]
+FieldNameAlt: Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].TextField11[5]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].TextField11[6]
+FieldNameAlt: Middle name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].TextField11[7]
+FieldNameAlt: Provide the name of a neighbor, landlord (if rental) or other person who knows you at this address. Last name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].TextField11[8]
+FieldNameAlt: First name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11[0].suffix[0]
+FieldNameAlt: Suffix
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11[0].#field[29]
+FieldNameAlt: Provide your relationship to this person (Check all that apply). Neighbor
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11[0].#field[30]
+FieldNameAlt: Friend
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11[0].#field[31]
+FieldNameAlt: Landlord
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11[0].#field[32]
+FieldNameAlt: Business associate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11[0].#field[33]
+FieldNameAlt: Other
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].TextField11[9]
+FieldNameAlt: (Provide explanation)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].TextField11[10]
+FieldNameAlt: Provide street address for this person (including apartment number). (Provide Country if outside the United States; otherwise provide State and Zip Code) Street address.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].TextField11[11]
+FieldNameAlt: City
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11[0].School6_State[1]
+FieldNameAlt: State
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11[0].DropDownList3[0]
+FieldNameAlt: Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].TextField11[12]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].p3-t68[3]
+FieldNameAlt: Provide e-mail address for this person.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11[0].#field[41]
+FieldNameAlt: I don't know
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].From_Datefield_Name_2[2]
+FieldNameAlt: Provide date of last contact. (Month/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11[0].#field[43]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].TextField11[13]
+FieldNameAlt: If you have indicated an APO/FPO address, complete (a).  If you have indicated an address outside of the United States, complete (b). (a) Provide physical location data with street address, base, post, embassy, unit, and country location or home port/fleet headquarter. (Provide City and Country if outside the United States; otherwise, provide City, State and Zip Code for ports in the United States.) Street Address/Unit/Duty Location 
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].TextField11[14]
+FieldNameAlt: City or Post Name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11[0].School6_State[2]
+FieldNameAlt: State
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11[0].DropDownList4[0]
+FieldNameAlt: Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].TextField11[15]
+FieldNameAlt: Address
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].TextField11[16]
+FieldNameAlt: A P O or F P O
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11[0].School6_State[3]
+FieldNameAlt: A P O / F P O State Code
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].TextField11[17]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].TextField11[18]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].TextField11[19]
+FieldNameAlt: If you have indicated an APO/FPO address, complete (a).  If you have indicated an address outside of the United States, complete (b). (a) Provide physical location data with street address, base, post, embassy, unit, and country location or home port/fleet headquarter. (Provide City and Country if outside the United States; otherwise, provide City, State and Zip Code for ports in the United States.) Street Address/Unit/Duty Location 
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].TextField11[20]
+FieldNameAlt: City or Post Name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11[0].School6_State[4]
+FieldNameAlt: State
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11[0].DropDownList4[1]
+FieldNameAlt: Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].TextField11[21]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11[0].RadioButtonList[1]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO
+FieldStateOption: Off
+FieldStateOption: YES 
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].TextField11[22]
+FieldNameAlt: Address
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].TextField11[23]
+FieldNameAlt: A P O or F P O
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11[0].School6_State[5]
+FieldNameAlt: A P O / F P O State Code
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11[0].TextField11[24]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11[0].RadioButtonList[2]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO
+FieldStateOption: Off
+FieldStateOption: YES 
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].SSN[0]
+FieldNameAlt: Your Social Security Number will auto-fill based on answer provided in section 4.
+FieldFlags: 0
+FieldJustification: Center
+FieldMaxLength: 9
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].p3-t68[0]
+FieldNameAlt: Evening telephone number
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].TextField11[0]
+FieldNameAlt: Extension
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11-2[0].#field[4]
+FieldNameAlt: International or D S N phone number
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11-2[0].#field[5]
+FieldNameAlt: Provide the following contact information for this person. I don't know.
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].p3-t68[1]
+FieldNameAlt: Daytime telephone number
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].TextField11[1]
+FieldNameAlt: Extension
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].p3-t68[2]
+FieldNameAlt: Cell/mobile telephone number
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].TextField11[2]
+FieldNameAlt: Extension
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11-2[0].#field[10]
+FieldNameAlt: International or D S N phone number
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11-2[0].#field[11]
+FieldNameAlt: I don't know
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11-2[0].#field[12]
+FieldNameAlt: International or D S N phone number
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11-2[0].#field[13]
+FieldNameAlt: I don't know
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].From_Datefield_Name_2[0]
+FieldNameAlt: Section 11. Where you have lived. Enter residence information. Entry #2 Provide dates of residence. From Date (Month/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11-2[0].#field[15]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].From_Datefield_Name_2[1]
+FieldNameAlt: To Date (Month/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11-2[0].#field[17]
+FieldNameAlt: Present
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11-2[0].#field[18]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11-2[0].RadioButtonList[0]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: 2
+FieldStateOption: 3
+FieldStateOption: 4
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].TextField12[0]
+FieldNameAlt: (Provide explanation)
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].TextField11[3]
+FieldNameAlt: Provide the street address. (Provide City and Country if outside the United States; otherwise, provide City, State and Zip Code.) Street address
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].TextField11[4]
+FieldNameAlt: City
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-2[0].School6_State[0]
+FieldNameAlt: State
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-2[0].DropDownList5[0]
+FieldNameAlt: Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].TextField11[5]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].TextField11[6]
+FieldNameAlt: Middle name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].TextField11[7]
+FieldNameAlt: Provide the name of a neighbor, landlord (if rental) or other person who knows you at this address. Last name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].TextField11[8]
+FieldNameAlt: First name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-2[0].suffix[0]
+FieldNameAlt: Suffix
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11-2[0].#field[29]
+FieldNameAlt: Provide your relationship to this person (Check all that apply). Neighbor
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11-2[0].#field[30]
+FieldNameAlt: Friend
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11-2[0].#field[31]
+FieldNameAlt: Landlord
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11-2[0].#field[32]
+FieldNameAlt: Business associate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11-2[0].#field[33]
+FieldNameAlt: Other
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].TextField11[9]
+FieldNameAlt: (Provide explanation)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].TextField11[10]
+FieldNameAlt: Provide street address for this person (including apartment number). (Provide Country if outside the United States; otherwise provide State and Zip Code) Street address.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].TextField11[11]
+FieldNameAlt: City
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-2[0].School6_State[1]
+FieldNameAlt: State
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-2[0].DropDownList3[0]
+FieldNameAlt: Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].TextField11[12]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].p3-t68[3]
+FieldNameAlt: Provide e-mail address for this person.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11-2[0].#field[41]
+FieldNameAlt: I don't know
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].From_Datefield_Name_2[2]
+FieldNameAlt: Provide date of last contact. (Month/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11-2[0].#field[43]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].TextField11[13]
+FieldNameAlt: If you have indicated an APO/FPO address, complete (a).  If you have indicated an address outside of the United States, complete (b). (a) Provide physical location data with street address, base, post, embassy, unit, and country location or home port/fleet headquarter. (Provide City and Country if outside the United States; otherwise, provide City, State and Zip Code for ports in the United States.) Street Address/Unit/Duty Location 
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].TextField11[14]
+FieldNameAlt: City or Post Name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-2[0].School6_State[2]
+FieldNameAlt: State
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-2[0].DropDownList4[0]
+FieldNameAlt: Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].TextField11[15]
+FieldNameAlt: Address
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].TextField11[16]
+FieldNameAlt: A P O or F P O
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-2[0].School6_State[3]
+FieldNameAlt: A P O / F P O State Code
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].TextField11[17]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].TextField11[18]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].TextField11[19]
+FieldNameAlt: If you have indicated an APO/FPO address, complete (a).  If you have indicated an address outside of the United States, complete (b). (a) Provide physical location data with street address, base, post, embassy, unit, and country location or home port/fleet headquarter. (Provide City and Country if outside the United States; otherwise, provide City, State and Zip Code for ports in the United States.) Street Address/Unit/Duty Location 
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].TextField11[20]
+FieldNameAlt: City or Post Name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-2[0].School6_State[4]
+FieldNameAlt: State
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-2[0].DropDownList4[1]
+FieldNameAlt: Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].TextField11[21]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11-2[0].RadioButtonList[1]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO
+FieldStateOption: Off
+FieldStateOption: YES 
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].TextField11[22]
+FieldNameAlt: Address
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].TextField11[23]
+FieldNameAlt: A P O or F P O
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-2[0].School6_State[5]
+FieldNameAlt: A P O / F P O State Code
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-2[0].TextField11[24]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11-2[0].RadioButtonList[2]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO
+FieldStateOption: Off
+FieldStateOption: YES 
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].SSN[0]
+FieldNameAlt: Your Social Security Number will auto-fill based on answer provided in section 4.
+FieldFlags: 0
+FieldJustification: Center
+FieldMaxLength: 9
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].p3-t68[0]
+FieldNameAlt: Evening telephone number
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].TextField11[0]
+FieldNameAlt: Extension
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11-3[0].#field[4]
+FieldNameAlt: International or D S N phone number
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11-3[0].#field[5]
+FieldNameAlt: Provide the following contact information for this person. I don't know.
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].p3-t68[1]
+FieldNameAlt: Daytime telephone number
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].TextField11[1]
+FieldNameAlt: Extension
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].p3-t68[2]
+FieldNameAlt: Cell/mobile telephone number
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].TextField11[2]
+FieldNameAlt: Extension
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11-3[0].#field[10]
+FieldNameAlt: International or D S N phone number
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11-3[0].#field[11]
+FieldNameAlt: I don't know
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11-3[0].#field[12]
+FieldNameAlt: International or D S N phone number
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11-3[0].#field[13]
+FieldNameAlt: I don't know
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].From_Datefield_Name_2[0]
+FieldNameAlt: Section 11. Where you have lived. Enter residence information. Entry #3 Provide dates of residence. From Date (Month/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11-3[0].#field[15]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].From_Datefield_Name_2[1]
+FieldNameAlt: To Date (Month/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11-3[0].#field[17]
+FieldNameAlt: Present
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11-3[0].#field[18]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11-3[0].RadioButtonList[0]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: 2
+FieldStateOption: 3
+FieldStateOption: 4
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].TextField12[0]
+FieldNameAlt: (Provide explanation)
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].TextField11[3]
+FieldNameAlt: Provide the street address. (Provide City and Country if outside the United States; otherwise, provide City, State and Zip Code.) Street address
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].TextField11[4]
+FieldNameAlt: City
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-3[0].School6_State[0]
+FieldNameAlt: State
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-3[0].DropDownList5[0]
+FieldNameAlt: Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].TextField11[5]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].TextField11[6]
+FieldNameAlt: Middle name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].TextField11[7]
+FieldNameAlt: Provide the name of a neighbor, landlord (if rental) or other person who knows you at this address. Last name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].TextField11[8]
+FieldNameAlt: First name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-3[0].suffix[0]
+FieldNameAlt: Suffix
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11-3[0].#field[29]
+FieldNameAlt: Provide your relationship to this person (Check all that apply). Neighbor
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11-3[0].#field[30]
+FieldNameAlt: Friend
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11-3[0].#field[31]
+FieldNameAlt: Landlord
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11-3[0].#field[32]
+FieldNameAlt: Business associate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11-3[0].#field[33]
+FieldNameAlt: Other
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].TextField11[9]
+FieldNameAlt: (Provide explanation)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].TextField11[10]
+FieldNameAlt: Provide street address for this person (including apartment number). (Provide Country if outside the United States; otherwise provide State and Zip Code) Street address.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].TextField11[11]
+FieldNameAlt: City
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-3[0].School6_State[1]
+FieldNameAlt: State
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-3[0].DropDownList3[0]
+FieldNameAlt: Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].TextField11[12]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].p3-t68[3]
+FieldNameAlt: Provide e-mail address for this person.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11-3[0].#field[41]
+FieldNameAlt: I don't know
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].From_Datefield_Name_2[2]
+FieldNameAlt: Provide date of last contact. (Month/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11-3[0].#field[43]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].TextField11[13]
+FieldNameAlt: If you have indicated an APO/FPO address, complete (a).  If you have indicated an address outside of the United States, complete (b). (a) Provide physical location data with street address, base, post, embassy, unit, and country location or home port/fleet headquarter. (Provide City and Country if outside the United States; otherwise, provide City, State and Zip Code for ports in the United States.) Street Address/Unit/Duty Location 
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].TextField11[14]
+FieldNameAlt: City or Post Name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-3[0].School6_State[2]
+FieldNameAlt: State
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-3[0].DropDownList4[0]
+FieldNameAlt: Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].TextField11[15]
+FieldNameAlt: Address
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].TextField11[16]
+FieldNameAlt: A P O or F P O
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-3[0].School6_State[3]
+FieldNameAlt: A P O / F P O State Code
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].TextField11[17]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].TextField11[18]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].TextField11[19]
+FieldNameAlt: If you have indicated an APO/FPO address, complete (a).  If you have indicated an address outside of the United States, complete (b). (a) Provide physical location data with street address, base, post, embassy, unit, and country location or home port/fleet headquarter. (Provide City and Country if outside the United States; otherwise, provide City, State and Zip Code for ports in the United States.) Street Address/Unit/Duty Location 
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].TextField11[20]
+FieldNameAlt: City or Post Name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-3[0].School6_State[4]
+FieldNameAlt: State
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-3[0].DropDownList4[1]
+FieldNameAlt: Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].TextField11[21]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11-3[0].RadioButtonList[1]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO
+FieldStateOption: Off
+FieldStateOption: YES 
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].TextField11[22]
+FieldNameAlt: Address
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].TextField11[23]
+FieldNameAlt: A P O or F P O
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-3[0].School6_State[5]
+FieldNameAlt: A P O / F P O State Code
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-3[0].TextField11[24]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11-3[0].RadioButtonList[2]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO
+FieldStateOption: Off
+FieldStateOption: YES 
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].SSN[0]
+FieldNameAlt: Your Social Security Number will auto-fill based on answer provided in section 4.
+FieldFlags: 0
+FieldJustification: Center
+FieldMaxLength: 9
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].p3-t68[0]
+FieldNameAlt: Evening telephone number
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].TextField11[0]
+FieldNameAlt: Extension
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11-4[0].#field[4]
+FieldNameAlt: International or D S N phone number
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11-4[0].#field[5]
+FieldNameAlt: Provide the following contact information for this person. I don't know.
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].p3-t68[1]
+FieldNameAlt: Daytime telephone number
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].TextField11[1]
+FieldNameAlt: Extension
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].p3-t68[2]
+FieldNameAlt: Cell/mobile telephone number
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].TextField11[2]
+FieldNameAlt: Extension
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11-4[0].#field[10]
+FieldNameAlt: International or D S N phone number
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11-4[0].#field[11]
+FieldNameAlt: I don't know
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11-4[0].#field[12]
+FieldNameAlt: International or D S N phone number
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11-4[0].#field[13]
+FieldNameAlt: I don't know
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].From_Datefield_Name_2[0]
+FieldNameAlt: Section 11. Where you have lived. Enter residence information. Entry #4 Provide dates of residence. From Date (Month/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11-4[0].#field[15]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].From_Datefield_Name_2[1]
+FieldNameAlt: To Date (Month/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11-4[0].#field[17]
+FieldNameAlt: Present
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11-4[0].#field[18]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].TextField12[0]
+FieldNameAlt: (Provide explanation)
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].TextField11[3]
+FieldNameAlt: Provide the street address. (Provide City and Country if outside the United States; otherwise, provide City, State and Zip Code.) Street address
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].TextField11[4]
+FieldNameAlt: City
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-4[0].School6_State[0]
+FieldNameAlt: State
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-4[0].DropDownList5[0]
+FieldNameAlt: Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].TextField11[5]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].TextField11[6]
+FieldNameAlt: Middle name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].TextField11[7]
+FieldNameAlt: Provide the name of a neighbor or other person who knows you at this address. Last name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].TextField11[8]
+FieldNameAlt: First name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-4[0].suffix[0]
+FieldNameAlt: Suffix
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11-4[0].#field[29]
+FieldNameAlt: Provide your relationship to this person (Check all that apply). Neighbor
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11-4[0].#field[30]
+FieldNameAlt: Friend
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11-4[0].#field[31]
+FieldNameAlt: Landlord
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11-4[0].#field[32]
+FieldNameAlt: Business associate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].Section11-4[0].#field[33]
+FieldNameAlt: Other
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].TextField11[9]
+FieldNameAlt: (Provide explanation)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].TextField11[10]
+FieldNameAlt: Provide street address for this person (including apartment number). (Provide Country if outside the United States; otherwise provide State and Zip Code) Street address.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].TextField11[11]
+FieldNameAlt: City
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-4[0].School6_State[1]
+FieldNameAlt: State
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-4[0].DropDownList3[0]
+FieldNameAlt: Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].TextField11[12]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].p3-t68[3]
+FieldNameAlt: Provide e-mail address for this person.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11-4[0].#field[41]
+FieldNameAlt: I don't know
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].From_Datefield_Name_2[2]
+FieldNameAlt: Provide date of last contact. (Month/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11-4[0].#field[43]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].TextField11[13]
+FieldNameAlt: If you have indicated an APO/FPO address, complete (a).  If you have indicated an address outside of the United States, complete (b). (a) Provide physical location data with street address, base, post, embassy, unit, and country location or home port/fleet headquarter. (Provide City and Country if outside the United States; otherwise, provide City, State and Zip Code for ports in the United States.) Street Address/Unit/Duty Location 
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].TextField11[14]
+FieldNameAlt: City or Post Name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-4[0].School6_State[2]
+FieldNameAlt: State
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-4[0].DropDownList4[0]
+FieldNameAlt: Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].TextField11[15]
+FieldNameAlt: Address
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].TextField11[16]
+FieldNameAlt: A P O or F P O
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-4[0].School6_State[3]
+FieldNameAlt: A P O / F P O State Code
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].TextField11[17]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].TextField11[18]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].TextField11[19]
+FieldNameAlt: If you have indicated an APO/FPO address, complete (a).  If you have indicated an address outside of the United States, complete (b). (a) Provide physical location data with street address, base, post, embassy, unit, and country location or home port/fleet headquarter. (Provide City and Country if outside the United States; otherwise, provide City, State and Zip Code for ports in the United States.) Street Address/Unit/Duty Location 
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].TextField11[20]
+FieldNameAlt: City or Post Name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-4[0].School6_State[4]
+FieldNameAlt: State
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-4[0].DropDownList4[1]
+FieldNameAlt: Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].TextField11[21]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11-4[0].RadioButtonList[0]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO
+FieldStateOption: Off
+FieldStateOption: YES 
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].TextField11[22]
+FieldNameAlt: Address
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].TextField11[23]
+FieldNameAlt: A P O or F P O
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].Section11-4[0].School6_State[5]
+FieldNameAlt: A P O / F P O State Code
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].Section11-4[0].TextField11[24]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].Section11-4[0].RadioButtonList[1]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO
+FieldStateOption: Off
+FieldStateOption: YES 
+---
+FieldType: Button
+FieldName: form1[0].Section11-4[0].RadioButtonList[2]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: 2
+FieldStateOption: 3
+FieldStateOption: 4
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].section_12[0].SSN[0]
+FieldNameAlt: Your Social Security Number will auto-fill based on answer provided in section 4.
+FieldFlags: 0
+FieldJustification: Center
+FieldMaxLength: 9
+---
+FieldType: Button
+FieldName: form1[0].section_12[0].pg10r1[0]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO
+FieldStateOption: Off
+FieldStateOption: YES
+---
+FieldType: Button
+FieldName: form1[0].section_12[0].pg10r2[0]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO (If NO to 12(a) and 12(b), proceed to Section 13A)
+FieldStateOption: Off
+FieldStateOption: YES
+---
+FieldType: Text
+FieldName: form1[0].section_12[0].From_Datefield_Name_2[0]
+FieldNameAlt: Entry # 1. Provide the dates of attendance.  From Date (Month/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].section_12[0].#field[3]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].section_12[0].sec12_1_1[0]
+FieldNameAlt: Present
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].section_12[0].sec12_1_1[1]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 2
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].section_12[0].pg10r4[0]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: 2
+FieldStateOption: 3
+FieldStateOption: College/University/Military College
+FieldStateOption: Correspondence/Distance/Extension/Online School
+FieldStateOption: High School
+FieldStateOption: Off
+FieldStateOption: Vocational/Technical/Trade School
+---
+FieldType: Button
+FieldName: form1[0].section_12[0].pg2r5[0]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO
+FieldStateOption: Off
+FieldStateOption: YES
+---
+FieldType: Text
+FieldName: form1[0].section_12[0].TextField11[0]
+FieldNameAlt: Provide the street address of the school. For correspondence/distance/extension/online schools, provide the address where the records are maintained. For assistance determining the school address, refer to http://ope.ed.gov/accreditation/search.aspx (Provide City and Country if outside the United States; otherwise, provide City, State and Zip Code.) Street address
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12[0].TextField11[1]
+FieldNameAlt: City
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].section_12[0].School6_State[0]
+FieldNameAlt: State
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].section_12[0].DropDownList28[0]
+FieldNameAlt: Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12[0].TextField11[2]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12[0].TextField11[3]
+FieldNameAlt: Provide the name of the school.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12[0].TextField11[4]
+FieldNameAlt: Last name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12[0].TextField11[5]
+FieldNameAlt: First name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].section_12[0].#field[14]
+FieldNameAlt: For schools you attended in the last 3 years, list a person who knew you at the school (instructor, student, etc.). Do not list people for education periods completed more than 3 years ago. For correspondence/distance/extension/online schools, list someone who knew you while you received this education. I don't know
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].section_12[0].TextField11[6]
+FieldNameAlt: Provide current address for this person (including apartment number).  (Provide City and Country if outside the United States; otherwise provide City, State and Zip Code) Street address.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12[0].TextField11[7]
+FieldNameAlt: City
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].section_12[0].School6_State[1]
+FieldNameAlt: State
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].section_12[0].DropDownList27[0]
+FieldNameAlt: Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12[0].TextField11[8]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12[0].p3-t68[0]
+FieldNameAlt: Telephone number
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12[0].TextField11[9]
+FieldNameAlt: Extension
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].section_12[0].#field[22]
+FieldNameAlt: International or D S N phone number
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].section_12[0].#field[23]
+FieldNameAlt: Provide telephone number for this person. I don't know
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].section_12[0].p3-t68[1]
+FieldNameAlt: Provide email address for this person.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].section_12[0].#field[25]
+FieldNameAlt: Provide the email address for this person. I don't know
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Choice
+FieldName: form1[0].section_12[0].Table1[0].Row1[0].Cell1[0]
+FieldNameAlt: Provide type of degrees(s)/diploma(s) received and date(s) awarded. Degree/diploma (High School Diploma, Associate's, Bachelor's, Master's, Doctorate, Professional Degree (e.g. M D, D V M, J D), Other). Row 1
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12[0].Table1[0].Row1[0].Cell2[0]
+FieldNameAlt: Other degree/diploma, Row 1
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12[0].Table1[0].Row1[0].Cell4[0]
+FieldNameAlt: Date awarded (Month/Year). Row 1
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].section_12[0].Table1[0].Row1[0].Cell5[0]
+FieldNameAlt: Estimate. Row 1
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Choice
+FieldName: form1[0].section_12[0].Table1[0].Row2[0].Cell1[0]
+FieldNameAlt: Degree/diploma (High School Diploma, Associate's, Bachelor's, Master's, Doctorate, Professional Degree (e.g. M D, D V M, J D), Other). Row 2.
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12[0].Table1[0].Row2[0].Cell2[0]
+FieldNameAlt: Other degree/diploma, Row 2
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12[0].Table1[0].Row2[0].Cell4[0]
+FieldNameAlt: Date awarded (Month/Year). Row 2
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].section_12[0].Table1[0].Row2[0].Cell5[0]
+FieldNameAlt: Estimate. Row 2
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: 
+FieldName: form1[0].section_12[0].Table1[0]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12[0].From_Datefield_Name_2[1]
+FieldNameAlt: To Date (Month/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12[0].From_Datefield_Name_2[2]
+FieldNameAlt: Entry #2. Provide the dates of attendance.  From Date (Month/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].section_12[0].#field[28]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].section_12[0].#field[29]
+FieldNameAlt: Present
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].section_12[0].#field[30]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].section_12[0].pg10r4[1]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: 2
+FieldStateOption: 3
+FieldStateOption: College/University/Military College
+FieldStateOption: Correspondence/Distance/Extension/Online School
+FieldStateOption: High School
+FieldStateOption: Off
+FieldStateOption: Vocational/Technical/Trade School
+---
+FieldType: Text
+FieldName: form1[0].section_12[0].TextField11[10]
+FieldNameAlt: Provide the street address of the school. For correspondence/distance/extension/online schools, provide the address where the records are maintained. For assistance determining the school address, refer to http://ope.ed.gov/accreditation/search.aspx (Provide City and Country if outside the United States; otherwise, provide City, State and Zip Code.) Street address
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12[0].TextField11[11]
+FieldNameAlt: City
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].section_12[0].School6_State[2]
+FieldNameAlt: State
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].section_12[0].DropDownList26[0]
+FieldNameAlt: Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12[0].TextField11[12]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12[0].TextField11[13]
+FieldNameAlt: Provide the name of the school.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12[0].TextField11[14]
+FieldNameAlt: For schools you attended in the last 3 years, list a person who knew you at the school (instructor, student, etc.). Do not list people for education periods completed more than 3 years ago. For correspondence/distance/extension/online schools, list someone who knew you while you received this education. Last name.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12[0].TextField11[15]
+FieldNameAlt: First name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].section_12[0].#field[39]
+FieldNameAlt: For schools you attended in the last 3 years, list a person who knew you at the school (instructor, student, etc.). Do not list people for education periods completed more than 3 years ago. For correspondence/distance/extension/online schools, list someone who knew you while you received this education. I don't know
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].section_12[0].From_Datefield_Name_2[3]
+FieldNameAlt: To Date (Month/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].section_12[0].#field[41]
+FieldNameAlt: Day
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].section_12[0].#field[42]
+FieldNameAlt: Night
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].section_12_2[0].SSN[0]
+FieldNameAlt: Your Social Security Number will auto-fill based on answer provided in section 4.
+FieldFlags: 0
+FieldJustification: Center
+FieldMaxLength: 9
+---
+FieldType: Button
+FieldName: form1[0].section_12_2[0].pg2r5[0]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO
+FieldStateOption: Off
+FieldStateOption: YES
+---
+FieldType: Text
+FieldName: form1[0].section_12_2[0].TextField11[0]
+FieldNameAlt: Provide current address for this person (including apartment number).  (Provide City and Country if outside the United States; otherwise provide City, State and Zip Code) Street address
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_2[0].TextField11[1]
+FieldNameAlt: City
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].section_12_2[0].School6_State[0]
+FieldNameAlt: State
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].section_12_2[0].DropDownList25[0]
+FieldNameAlt: Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_2[0].TextField11[2]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_2[0].p3-t68[0]
+FieldNameAlt: Provide email address for this person.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].section_12_2[0].#field[8]
+FieldNameAlt: Provide email address for this person. I don't know
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Choice
+FieldName: form1[0].section_12_2[0].Table1[0].Row1[0].Cell1[0]
+FieldNameAlt: Degree/diploma (High School Diploma, Associate's, Bachelor's, Master's, Doctorate, Professional Degree (e.g. M D, D V M, J D), Other). Row 1
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_2[0].Table1[0].Row1[0].Cell2[0]
+FieldNameAlt: Other degree/diploma. Row 1
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_2[0].Table1[0].Row1[0].Cell4[0]
+FieldNameAlt: Date awarded (Month/Year). Row 1
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].section_12_2[0].Table1[0].Row1[0].Cell5[0]
+FieldNameAlt: Estimate. Row 1
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Choice
+FieldName: form1[0].section_12_2[0].Table1[0].Row2[0].Cell1[0]
+FieldNameAlt: Degree/diploma (High School Diploma, Associate's, Bachelor's, Master's, Doctorate, Professional Degree (e.g. M D, D V M, J D), Other). Row 2. 
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_2[0].Table1[0].Row2[0].Cell2[0]
+FieldNameAlt: Other degree/diploma. Row 2
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_2[0].Table1[0].Row2[0].Cell4[0]
+FieldNameAlt: Date awarded (Month/Year). Row 2
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].section_12_2[0].Table1[0].Row2[0].Cell5[0]
+FieldNameAlt: Estimate. Row 2.
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: 
+FieldName: form1[0].section_12_2[0].Table1[0]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_2[0].From_Datefield_Name_2[0]
+FieldNameAlt: Entry #3. Provide the dates of attendance.  From Date (Month/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].section_12_2[0].#field[10]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].section_12_2[0].#field[11]
+FieldNameAlt: Present
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].section_12_2[0].#field[12]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].section_12_2[0].pg10r4[0]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: 2
+FieldStateOption: 3
+FieldStateOption: College/University/Military College
+FieldStateOption: Correspondence/Distance/Extension/Online School
+FieldStateOption: High School
+FieldStateOption: Off
+FieldStateOption: Vocational/Technical/Trade School
+---
+FieldType: Button
+FieldName: form1[0].section_12_2[0].pg2r5[1]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO
+FieldStateOption: Off
+FieldStateOption: YES
+---
+FieldType: Text
+FieldName: form1[0].section_12_2[0].TextField11[3]
+FieldNameAlt: Provide the street address of the school. For correspondence/distance/extension/online schools, provide the address where the records are maintained. For assistance determining the school address, refer to http://ope.ed.gov/accreditation/search.aspx (Provide City and Country if outside the United States; otherwise, provide City, State and Zip Code.) Street address
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_2[0].TextField11[4]
+FieldNameAlt: City
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].section_12_2[0].School6_State[1]
+FieldNameAlt: State
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].section_12_2[0].DropDownList28[0]
+FieldNameAlt: Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_2[0].TextField11[5]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_2[0].TextField11[6]
+FieldNameAlt: Provide the name of the school.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_2[0].TextField11[7]
+FieldNameAlt: Last name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_2[0].TextField11[8]
+FieldNameAlt: First name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].section_12_2[0].#field[21]
+FieldNameAlt: For schools you attended in the last 3 years, list a person who knew you at the school (instructor, student, etc.). Do not list people for education periods completed more than 3 years ago. For correspondence/distance/extension/online schools, list someone who knew you while you received this education. I don't know
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].section_12_2[0].TextField11[9]
+FieldNameAlt: Provide current address for this person (including apartment number).  (Provide City and Country if outside the United States; otherwise provide City, State and Zip Code) Street address.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_2[0].TextField11[10]
+FieldNameAlt: City
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].section_12_2[0].School6_State[2]
+FieldNameAlt: State
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].section_12_2[0].DropDownList27[0]
+FieldNameAlt: Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_2[0].TextField11[11]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_2[0].p3-t68[1]
+FieldNameAlt: Provide email address for this person.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].section_12_2[0].#field[28]
+FieldNameAlt: Provide email address for this person. I don't know.
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Choice
+FieldName: form1[0].section_12_2[0].Table1[1].Row1[0].Cell1[0]
+FieldNameAlt: Provide type of degrees(s)/diploma(s) received and date(s) awarded. Degree/diploma (High School Diploma, Associate's, Bachelor's, Master's, Doctorate, Professional Degree (e.g. M D, D V M, J D), Other). Row 1
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_2[0].Table1[1].Row1[0].Cell2[0]
+FieldNameAlt: Other degree/diploma, Row 1
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_2[0].Table1[1].Row1[0].Cell4[0]
+FieldNameAlt: Date awarded (Month/Year). Row 1
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].section_12_2[0].Table1[1].Row1[0].Cell5[0]
+FieldNameAlt: Estimate. Row 1
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Choice
+FieldName: form1[0].section_12_2[0].Table1[1].Row2[0].Cell1[0]
+FieldNameAlt: Degree/diploma (High School Diploma, Associate's, Bachelor's, Master's, Doctorate, Professional Degree (e.g. M D, D V M, J D), Other). Row 2.
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_2[0].Table1[1].Row2[0].Cell2[0]
+FieldNameAlt: Other degree/diploma, Row 2
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_2[0].Table1[1].Row2[0].Cell4[0]
+FieldNameAlt: Date awarded (Month/Year). Row 2
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].section_12_2[0].Table1[1].Row2[0].Cell5[0]
+FieldNameAlt: Estimate. Row 2
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: 
+FieldName: form1[0].section_12_2[0].Table1[1]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_2[0].From_Datefield_Name_2[1]
+FieldNameAlt: To Date (Month/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].section_12_2[0].#field[30]
+FieldNameAlt: Provide telephone number for this person. I don't know.
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].section_12_2[0].#field[31]
+FieldNameAlt: International or D S N phone number
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].section_12_2[0].p3-t68[2]
+FieldNameAlt: Telephone number
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_2[0].TextField11[12]
+FieldNameAlt: Extension
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].section_12_2[0].#field[34]
+FieldNameAlt: Day
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].section_12_2[0].#field[35]
+FieldNameAlt: Night
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].section_12_2[0].#field[36]
+FieldNameAlt: International or D S N phone number
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].section_12_2[0].#field[37]
+FieldNameAlt: Provide telephone number for this person. I don't know
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].section_12_2[0].p3-t68[3]
+FieldNameAlt: Telephone number
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_2[0].TextField11[13]
+FieldNameAlt: Extension
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].section_12_2[0].#field[40]
+FieldNameAlt: Day
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].section_12_2[0].#field[41]
+FieldNameAlt: Night
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].section_12_3[0].SSN[0]
+FieldNameAlt: Your Social Security Number will auto-fill based on answer provided in section 4.
+FieldFlags: 0
+FieldJustification: Center
+FieldMaxLength: 9
+---
+FieldType: Text
+FieldName: form1[0].section_12_3[0].From_Datefield_Name_2[0]
+FieldNameAlt: Entry #4. Provide the dates of attendance.  From Date (Month/Year)
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].section_12_3[0].#field[3]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].section_12_3[0].#field[4]
+FieldNameAlt: Present
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].section_12_3[0].#field[5]
+FieldNameAlt: Estimate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].section_12_3[0].pg10r4[0]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: 2
+FieldStateOption: 3
+FieldStateOption: College/University/Military College
+FieldStateOption: Correspondence/Distance/Extension/Online School
+FieldStateOption: High School
+FieldStateOption: Off
+FieldStateOption: Vocational/Technical/Trade School
+---
+FieldType: Button
+FieldName: form1[0].section_12_3[0].pg2r5[0]
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: 0
+FieldStateOption: 1
+FieldStateOption: NO
+FieldStateOption: Off
+FieldStateOption: YES
+---
+FieldType: Text
+FieldName: form1[0].section_12_3[0].TextField11[0]
+FieldNameAlt: Provide the street address of the school. For correspondence/distance/extension/online schools, provide the address where the records are maintained. For assistance determining the school address, refer to http://ope.ed.gov/accreditation/search.aspx (Provide City and Country if outside the United States; otherwise, provide City, State and Zip Code.) Street address
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_3[0].TextField11[1]
+FieldNameAlt: City
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].section_12_3[0].School6_State[0]
+FieldNameAlt: State
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].section_12_3[0].DropDownList28[0]
+FieldNameAlt: Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_3[0].TextField11[2]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_3[0].TextField11[3]
+FieldNameAlt: Provide the name of the school.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_3[0].TextField11[4]
+FieldNameAlt: For schools you attended in the last 3 years, list a person who knew you at the school (instructor, student, etc.). Do not list people for education periods completed more than 3 years ago. For correspondence/distance/extension/online schools, list someone who knew you while you received this education. Last name.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_3[0].TextField11[5]
+FieldNameAlt: First name
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].section_12_3[0].#field[14]
+FieldNameAlt: For schools you attended in the last 3 years, list a person who knew you at the school (instructor, student, etc.). Do not list people for education periods completed more than 3 years ago. For correspondence/distance/extension/online schools, list someone who knew you while you received this education. I don't know
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].section_12_3[0].TextField11[6]
+FieldNameAlt: Provide current address for this person (including apartment number).  (Provide City and Country if outside the United States; otherwise provide City, State and Zip Code) Street address.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_3[0].TextField11[7]
+FieldNameAlt: City
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].section_12_3[0].School6_State[1]
+FieldNameAlt: State
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].section_12_3[0].DropDownList27[0]
+FieldNameAlt: Country
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_3[0].TextField11[8]
+FieldNameAlt: Zip Code
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_3[0].p3-t68[0]
+FieldNameAlt: Provide email address for this person.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].section_12_3[0].#field[21]
+FieldNameAlt: Provide email address for this person. I don't know.
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Choice
+FieldName: form1[0].section_12_3[0].Table1[0].Row1[0].Cell1[0]
+FieldNameAlt: Provide type of degrees(s)/diploma(s) received and date(s) awarded. Degree/diploma (High School Diploma, Associate's, Bachelor's, Master's, Doctorate, Professional Degree (e.g. M D, D V M, J D), Other). Row 1
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_3[0].Table1[0].Row1[0].Cell2[0]
+FieldNameAlt: Other degree/diploma, Row 1
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_3[0].Table1[0].Row1[0].Cell4[0]
+FieldNameAlt: Date awarded (Month/Year). Row 1
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].section_12_3[0].Table1[0].Row1[0].Cell5[0]
+FieldNameAlt: Estimate. Row 1
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
+FieldType: Choice
+FieldName: form1[0].section_12_3[0].Table1[0].Row2[0].Cell1[0]
+FieldNameAlt: Degree/diploma (High School Diploma, Associate's, Bachelor's, Master's, Doctorate, Professional Degree (e.g. M D, D V M, J D), Other). Row 2.
+FieldFlags: 67502080
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_3[0].Table1[0].Row2[0].Cell2[0]
+FieldNameAlt: Other degree/diploma, Row 2
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].section_12_3[0].Table1[0].Row2[0].Cell4[0]
+FieldNameAlt: Date awarded (Month/Year). Row 2
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].section_12_3[0].Table1[0].Row2[0].Cell5[0]
+FieldNameAlt: Estimate. Row 2
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+---
