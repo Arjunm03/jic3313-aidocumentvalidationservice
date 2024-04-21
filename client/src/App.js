@@ -302,11 +302,13 @@ function App() {
                 onChange={(e) => setFile(e.target.files[0])}
               />
               <br />
-              <label for="type">Choose a document type: </label>
+              <label for="type" style={{paddingRight: '5px'}}>Choose a document type: </label>
               <select
                 className="type"
                 required
                 onChange={(e) => setType(e.target.value)}
+
+                style={{paddingLeft: '5px'}}
               >
                 <option selected value=""></option>
                 <option value="Tax W-2">Tax W-2</option>
@@ -315,7 +317,7 @@ function App() {
                 <option value="Tax 1099">Tax 1099</option>
                 <option value="SF-86">SF-86</option>
               </select>
-              <button class="btn btn-primary" type="submit">
+              <button class="btn btn-primary" type="submit" style={{marginLeft: '35px'}}> 
                 Upload File
               </button>
             </form>
@@ -370,25 +372,20 @@ function App() {
                                 <button
                                   className="btn btn-secondary"
                                   onClick={() =>
-                                    updateValidationResults(
-                                      data._id,
-                                      data.pdf,
-                                      data.title
-                                    )
+                                    updateValidationResults(data._id, data.pdf, data.title)
                                   }
                                   disabled={userType == "user"}
                                 >
                                   Process Document
                                 </button>{" "}
-                                &nbsp; &nbsp; &nbsp; &nbsp; Validation Status:
-                                &nbsp;
-                                <span class="badge text-bg-info">
+                                &nbsp; &nbsp; &nbsp; &nbsp; Validation Status: &nbsp;
+                                <span
+                                  className={`badge text-bg-${data.validationStatus === "Accept" ? "success" : data.validationStatus === "Unprocessed" ? "warning" : "danger"}`}
+                                >
                                   {data.validationStatus}
                                 </span>
                                 &nbsp; &nbsp; &nbsp; &nbsp; Type: &nbsp;
-                                <span class="badge text-bg-info">
-                                  {data.type}
-                                </span>
+                                <span className="badge text-bg-info">{data.type}</span>
                                 &nbsp; &nbsp; &nbsp; &nbsp;
                                 <Link
                                   to={{
@@ -402,9 +399,7 @@ function App() {
                                 &nbsp; &nbsp; &nbsp; &nbsp;
                                 <button
                                   className="btn btn-secondary"
-                                  onClick={() =>
-                                    deleteDocument(data._id, data.title)
-                                  }
+                                  onClick={() => deleteDocument(data._id, data.title)}
                                 >
                                   Delete Document
                                 </button>
@@ -414,11 +409,7 @@ function App() {
                               <Route
                                 path={`/results_${key}`}
                                 element={
-                                  <ResultsPage
-                                    userType={userType}
-                                    data={data}
-                                    API={API}
-                                  />
+                                  <ResultsPage userType={userType} data={data} API={API} />
                                 }
                               />
                             </Routes>
