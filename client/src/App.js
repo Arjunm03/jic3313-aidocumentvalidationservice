@@ -281,172 +281,173 @@ function App() {
   if (loggedIn) {
     return (
       <div className="container">
-      <Router>
-        <div class="App">
-        <form className="formStyle" onSubmit={submitImage}>
-          <h4>Upload PDF for Document Validation Service</h4>
-          <br />
-          <input
-          type="text"
-          className="form-control"
-          placeholder="Enter Title Here"
-          required
-          onChange={(e) => setTitle(e.target.value)}
-          />
-          <br />
-          <input
-          type="file"
-          class="form-control"
-          accept="application/pdf"
-          required
-          onChange={(e) => setFile(e.target.files[0])}
-          />
-          <br />
-          <label for="type">Choose a document type: </label>
-          <select
-          className="type"
-          required
-          onChange={(e) => setType(e.target.value)}
-          >
-          <option selected value=""></option>
-          <option value="Tax W-2">Tax W-2</option>
-          <option value="Tax 1040">Tax 1040</option>
-          <option value="Tax 1098">Tax 1098</option>
-          <option value="Tax 1099">Tax 1099</option>
-          <option value="SF-86">SF-86</option>
-          </select>
-          <button class="btn btn-primary" type="submit">
-          Upload File
-          </button>
-        </form>
+        <Router>
+          <div class="App">
+            <form className="formStyle" onSubmit={submitImage}>
+              <h4>Upload PDF for Document Validation Service</h4>
+              <br />
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Enter Title Here"
+                required
+                onChange={(e) => setTitle(e.target.value)}
+              />
+              <br />
+              <input
+                type="file"
+                class="form-control"
+                accept="application/pdf"
+                required
+                onChange={(e) => setFile(e.target.files[0])}
+              />
+              <br />
+              <label for="type">Choose a document type: </label>
+              <select
+                className="type"
+                required
+                onChange={(e) => setType(e.target.value)}
+              >
+                <option selected value=""></option>
+                <option value="Tax W-2">Tax W-2</option>
+                <option value="Tax 1040">Tax 1040</option>
+                <option value="Tax 1098">Tax 1098</option>
+                <option value="Tax 1099">Tax 1099</option>
+                <option value="SF-86">SF-86</option>
+              </select>
+              <button class="btn btn-primary" type="submit">
+                Upload File
+              </button>
+            </form>
+            <br></br>
+            <div className="uploaded">
+              <h4>Previously Uploaded PDFs:</h4>
+              <label for="typeFilter">Filter by type: </label>
+              <select
+                className="typeFilter"
+                required
+                onChange={(e) => setTypeFilter(e.target.value)}
+              >
+                <option selected value=""></option>
+                <option value="Tax W-2">Tax W-2</option>
+                <option value="Tax 1040">Tax 1040</option>
+                <option value="Tax 1098">Tax 1098</option>
+                <option value="Tax 1099">Tax 1099</option>
+                <option value="SF-86">SF-86</option>
+              </select>
+              <label for="statusFilter">Filter by status: </label>
+              <select
+                className="statusFilter"
+                required
+                onChange={(e) => setStatusFilter(e.target.value)}
+              >
+                <option selected value=""></option>
+                <option value="Unprocessed">Unprocessed</option>
+                <option value="Passed">Passed</option>
+                <option value="Failed">Failed</option>
+              </select>
 
-        <br></br>
-        <br />
-
-        <div className="uploaded">
-          <h4>Previously Uploaded PDFs:</h4>
-          <label for="typeFilter" style={{paddingRight: '5px'}} >Filter by type: </label>
-          <select
-          className="typeFilter"
-          required
-          onChange={(e) => setTypeFilter(e.target.value)}
-          >
-          <option selected value=""></option>
-          <option value="Tax W-2">Tax W-2</option>
-          <option value="Tax 1040">Tax 1040</option>
-          <option value="Tax 1098">Tax 1098</option>
-          <option value="Tax 1099">Tax 1099</option>
-          <option value="SF-86">SF-86</option>
-          </select>
-          <label for="statusFilter" style={{paddingLeft: '20px'}}>Filter by status:&nbsp;&nbsp; </label>
-          <select
-          className="statusFilter"
-          required
-          onChange={(e) => setStatusFilter(e.target.value)}
-          >
-          <option selected value=""></option>
-          <option value="Unprocessed">Unprocessed</option>
-          <option value="Passed">Passed</option>
-          <option value="Failed">Failed</option>
-          </select>
-
-          <br /><br />
+              <br /><br />
           <br />
-          <div className="output-div">
-          {Object.keys(allImage).length === 0
-            ? ""
-            : allImage.map((data, key) => {
-              if (
-              (typeFilter == "" || data.type == typeFilter) &&
-              (statusFilter == "" ||
-                data.validationStatus == statusFilter)
-              )
-              return (
-                <>
-                <div className="inner-div">
-                  <h6>
-                  {data.title} &nbsp; &nbsp; &nbsp; &nbsp;
-                  <button
-                    className="btn btn-primary"
-                    onClick={() => showPdf(data.pdf)}
-                  >
-                    Open {data.title}
-                  </button>{" "}
-                  &nbsp; &nbsp; &nbsp; &nbsp;
-                  <button
-                    className="btn btn-secondary"
-                    onClick={() =>
-                    updateValidationResults(
-                      data._id,
-                      data.pdf,
-                      data.title
-                    )
-                    }
-                    disabled={userType == "user"}
-                  >
-                    Process Document
-                  </button>{" "}
-                  &nbsp; &nbsp; &nbsp; &nbsp; Validation Status:
-                  &nbsp;
-                  <span class="badge text-bg-info">
-                    {data.validationStatus}
-                  </span>
-                  &nbsp; &nbsp; &nbsp; &nbsp; Type: &nbsp;
-                  <span class="badge text-bg-info">
-                    {data.type}
-                  </span>
-                  &nbsp; &nbsp; &nbsp; &nbsp;
-                  <Link
-                    to={{
-                    pathname: `/results_${key}`,
-                    state: { data: data },
-                    }}
-                    className="btn btn-secondary"
-                  >
-                    View Results
-                  </Link>
-                  &nbsp; &nbsp; &nbsp; &nbsp;
-                  <button
-                    className="btn btn-secondary"
-                    onClick={() =>
-                    deleteDocument(data._id, data.title)
-                    }
-                  >
-                    Delete Document
-                  </button>
-                  </h6>
-                </div>
-                <Routes>
-                  <Route
-                  path={`/results_${key}`}
-                  element={
-                    <ResultsPage
-                    userType={userType}
-                    data={data}
-                    API={API}
-                    />
-                  }
-                  />
-                </Routes>
-                </>
-              );
-            })}
+          
+              <div
+                className="output-div"
+                style={{ overflowY: "scroll", maxHeight: "400px" }}
+              >
+                {Object.keys(allImage).length === 0
+                  ? ""
+                  : allImage.map((data, key) => {
+                      if (
+                        (typeFilter == "" || data.type == typeFilter) &&
+                        (statusFilter == "" ||
+                          data.validationStatus == statusFilter)
+                      )
+                        return (
+                          <>
+                            <div className="inner-div">
+                              <h6>
+                                {data.title} &nbsp; &nbsp; &nbsp; &nbsp;
+                                <button
+                                  className="btn btn-primary"
+                                  onClick={() => showPdf(data.pdf)}
+                                >
+                                  Open {data.title}
+                                </button>{" "}
+                                &nbsp; &nbsp; &nbsp; &nbsp;
+                                <button
+                                  className="btn btn-secondary"
+                                  onClick={() =>
+                                    updateValidationResults(
+                                      data._id,
+                                      data.pdf,
+                                      data.title
+                                    )
+                                  }
+                                  disabled={userType == "user"}
+                                >
+                                  Process Document
+                                </button>{" "}
+                                &nbsp; &nbsp; &nbsp; &nbsp; Validation Status:
+                                &nbsp;
+                                <span class="badge text-bg-info">
+                                  {data.validationStatus}
+                                </span>
+                                &nbsp; &nbsp; &nbsp; &nbsp; Type: &nbsp;
+                                <span class="badge text-bg-info">
+                                  {data.type}
+                                </span>
+                                &nbsp; &nbsp; &nbsp; &nbsp;
+                                <Link
+                                  to={{
+                                    pathname: `/results_${key}`,
+                                    state: { data: data },
+                                  }}
+                                  className="btn btn-secondary"
+                                >
+                                  View Results
+                                </Link>
+                                &nbsp; &nbsp; &nbsp; &nbsp;
+                                <button
+                                  className="btn btn-secondary"
+                                  onClick={() =>
+                                    deleteDocument(data._id, data.title)
+                                  }
+                                >
+                                  Delete Document
+                                </button>
+                              </h6>
+                            </div>
+                            <Routes>
+                              <Route
+                                path={`/results_${key}`}
+                                element={
+                                  <ResultsPage
+                                    userType={userType}
+                                    data={data}
+                                    API={API}
+                                  />
+                                }
+                              />
+                            </Routes>
+                          </>
+                        );
+                    })}
+              </div>
+              <br />
+            </div>
+            <br></br>
+            <h4>PDF Viewer</h4>
+            <PdfComp pdfFile={pdfFile} />
+            <br></br>
+            <button className="btn btn-danger" onClick={() => showPdf(null)}>
+              Close PDF Viewer
+            </button>
+            <br></br>
+            <div>
+              <button className = "logout-button" onClick={handleLogout}>Logout</button>
+            </div>
           </div>
-          <br />
-        </div>
-        <br></br>
-        <h4>PDF Viewer</h4>
-        <PdfComp pdfFile={pdfFile} />
-        <br></br>
-        <button className="btn btn-danger" onClick={() => showPdf(null)}>
-          Close PDF Viewer
-        </button>
-        <br></br>
-        <div>
-          <button className = "logout-button" onClick={handleLogout}>Logout</button>
-        </div>
-        </div>
-      </Router>
+        </Router>
       </div>
     );
   } else {
