@@ -49,13 +49,39 @@ from pypdf import PdfReader, PdfWriter
 # print(f"Number of FieldNameAlt entries: {len(field_name_alts)}")
 # print(f"Number of FieldStateOption entries: {len(field_state_options)}")
 
-# ------------------------------------------PyPDF actual-----------------------------------
+# -----------------------------------FillPDFs with CSV-----------------------------------
+# hex_keys = list(fillpdfs.get_form_fields("SF-86-example.pdf").keys())
+
+# df = pd.read_csv('mimedata.csv')
+
+# for i in range(len(df)):
+#     data_dict = mapping(df.loc[i])
+#     fillpdfs.write_fillable_pdf("SF-86-example.pdf", "SF-new.pdf", data_dict)
+
+# data_dict = {}
+# for i in range(len(hex_keys[0:3])):
+#     data_dict[hex_keys[i]] = "Sriman"
+
+# fillpdfs.write_fillable_pdf("SF-86-example.pdf", "SF-new.pdf", data_dict)
+
+# ------------------------------------------PyPDF-----------------------------------
 reader = PdfReader("SF-86-example.pdf")
 writer = PdfWriter()
 
+# page = reader.pages[4]
 fields = reader.get_fields()
 
 field_keys = [k for k in fields.keys()]
+
+# -------------------------------------------Printing Field names-------------------------
+# output_file = 'fieldnames.txt'
+# with open(output_file, 'w') as file:
+#     for i in range(len(field_keys)):
+#         try:
+#             file.write("'" + field_keys[i] + "'" + ":")
+#             file.write("\n")
+#         except:
+#             continue
 
 writer.append(reader)
 
@@ -76,26 +102,15 @@ for i in range(len(df)):
     )
 
     # write "output" to pypdf-output.pdf
-    with open("sample.pdf", "wb") as output_stream:
+    with open("filled-out.pdf", "wb") as output_stream:
         writer.write(output_stream)
 
-# -----------------------------Filling key numbers to PDF for convenience---------------------
-# writer.update_page_form_field_values(
-#         page=None,
-#         fields={field_keys[i]: i for i in range(len(field_keys))},
-#         auto_regenerate=False,
-#     )
+writer.update_page_form_field_values(
+        page=None,
+        fields={field_keys[i]: i for i in range(len(field_keys))},
+        auto_regenerate=False,
+    )
 
-# # write "output" to pypdf-output.pdf
-# with open("filled-out.pdf", "wb") as output_stream:
-#     writer.write(output_stream)
-
-# -------------------------------------------Printing Field names-------------------------
-output_file = 'fieldnames.txt'
-with open(output_file, 'w') as file:
-    for i in range(len(field_keys)):
-        try:
-            file.write("'" + field_keys[i] + "'" + ":")
-            file.write("\n")
-        except:
-            continue
+# write "output" to pypdf-output.pdf
+with open("sample.pdf", "wb") as output_stream:
+    writer.write(output_stream)
