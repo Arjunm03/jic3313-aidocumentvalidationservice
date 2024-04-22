@@ -379,25 +379,20 @@ function App() {
                                 <button
                                   className="btn btn-secondary"
                                   onClick={() =>
-                                    updateValidationResults(
-                                      data._id,
-                                      data.pdf,
-                                      data.title
-                                    )
+                                    updateValidationResults(data._id, data.pdf, data.title)
                                   }
                                   disabled={userType == "user"}
                                 >
                                   Process Document
                                 </button>{" "}
-                                &nbsp; &nbsp; &nbsp; &nbsp; Validation Status:
-                                &nbsp;
-                                <span class="badge text-bg-info">
+                                &nbsp; &nbsp; &nbsp; &nbsp; Validation Status: &nbsp;
+                                <span
+                                  className={`badge text-bg-${data.validationStatus === "Accept" ? "success" : data.validationStatus === "Unprocessed" ? "warning" : "danger"}`}
+                                >
                                   {data.validationStatus}
                                 </span>
                                 &nbsp; &nbsp; &nbsp; &nbsp; Type: &nbsp;
-                                <span class="badge text-bg-info">
-                                  {data.type}
-                                </span>
+                                <span className="badge text-bg-info">{data.type}</span>
                                 &nbsp; &nbsp; &nbsp; &nbsp;
                                 <Link
                                   to={{
@@ -411,9 +406,7 @@ function App() {
                                 &nbsp; &nbsp; &nbsp; &nbsp;
                                 <button
                                   className="btn btn-secondary"
-                                  onClick={() =>
-                                    deleteDocument(data._id, data.title)
-                                  }
+                                  onClick={() => deleteDocument(data._id, data.title)}
                                 >
                                   Delete Document
                                 </button>
@@ -423,11 +416,7 @@ function App() {
                               <Route
                                 path={`/results_${key}`}
                                 element={
-                                  <ResultsPage
-                                    userType={userType}
-                                    data={data}
-                                    API={API}
-                                  />
+                                  <ResultsPage userType={userType} data={data} API={API} />
                                 }
                               />
                             </Routes>
