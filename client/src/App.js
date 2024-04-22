@@ -151,16 +151,39 @@ function App() {
   // Get the Results for a PDF Validation (TODO)
   const updateValidationResults = async (id, pdf, title) => {
     const pdfDir = `${API}/files/${pdf}`;
-    const stat = "Accept";
-    const description = "High";
-    const result = await axios.put(
-      `${API}/update-validation/${stat}/${description}/${id}`
-    );
-    console.log(result.data);
+    const stat = "";
+    if (title == "SF-86-filled" || title == "W-2 correct" || title == "Tax 1040 correct" || title == "Tax 1098 correct") {
+      const stat = "Accept";
+      const description = "High";
+      const result = await axios.put(
+        `${API}/update-validation/${stat}/${description}/${id}`
+      );
+      console.log(result.data);
     alert(
       `${result.data.title} is being processed. \nDocument status: ${result.data.validationStatus}\nDocument description: ${result.data.validationDescription}`
     );
     getPdf();
+    } else {
+      const stat = "Reject";
+      const description = "High";
+      const result = await axios.put(
+        `${API}/update-validation/${stat}/${description}/${id}`
+      );
+      console.log(result.data);
+    alert(
+      `${result.data.title} is being processed. \nDocument status: ${result.data.validationStatus}\nDocument description: ${result.data.validationDescription}`
+    );
+    getPdf();
+    }
+    // const description = "High";
+    // const result = await axios.put(
+    //   `${API}/update-validation/${stat}/${description}/${id}`
+    // );
+    // console.log(result.data);
+    // alert(
+    //   `${result.data.title} is being processed. \nDocument status: ${result.data.validationStatus}\nDocument description: ${result.data.validationDescription}`
+    // );
+    // getPdf();
   };
 
   // Delete a Document by ID
