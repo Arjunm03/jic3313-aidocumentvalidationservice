@@ -468,7 +468,7 @@ function App() {
     return (
       <div class="App">
         <div class="center">
-          <h4>Microsoft OpenAI Document Validation Service Login</h4> <br></br>
+          <h4>Microsoft AI-Powered Document Validation Service Login</h4> <br></br>
           <form onSubmit={handleLogin}>
             <input
               type="text"

@@ -7,7 +7,7 @@ jest.mock("axios");
 describe("App", () => {
   test("renders login form when not logged in", () => {
     render(<App />);
-    const loginForm = screen.getByText("Microsoft OpenAI Document Validation Service Login");
+    const loginForm = screen.getByText("Microsoft AI-Powered Document Validation Service Login");
     expect(loginForm).toBeInTheDocument();
   });
 
@@ -55,7 +55,7 @@ describe("App", () => {
     const logoutButton = screen.getByText("Logout");
     fireEvent.click(logoutButton);
     await waitFor(() => {
-      expect(screen.getByText("Microsoft OpenAI Document Validation Service Login")).toBeInTheDocument();
+      expect(screen.getByText("Microsoft AI-Powered Document Validation Service Login")).toBeInTheDocument();
     });
   });
 
