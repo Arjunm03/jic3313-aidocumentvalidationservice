@@ -151,39 +151,16 @@ function App() {
   // Get the Results for a PDF Validation (TODO)
   const updateValidationResults = async (id, pdf, title) => {
     const pdfDir = `${API}/files/${pdf}`;
-    const stat = "";
-    if (title == "SF-86-filled" || title == "W-2 correct" || title == "Tax 1040 correct" || title == "Tax 1098 correct") {
-      const stat = "Accept";
-      const description = "High";
-      const result = await axios.put(
-        `${API}/update-validation/${stat}/${description}/${id}`
-      );
-      console.log(result.data);
+    const stat = "Accepted";
+    const description = "High";
+    const result = await axios.put(
+      `${API}/update-validation/${stat}/${description}/${id}`
+    );
+    console.log(result.data);
     alert(
       `${result.data.title} is being processed. \nDocument status: ${result.data.validationStatus}\nDocument description: ${result.data.validationDescription}`
     );
     getPdf();
-    } else {
-      const stat = "Reject";
-      const description = "High";
-      const result = await axios.put(
-        `${API}/update-validation/${stat}/${description}/${id}`
-      );
-      console.log(result.data);
-    alert(
-      `${result.data.title} is being processed. \nDocument status: ${result.data.validationStatus}\nDocument description: ${result.data.validationDescription}`
-    );
-    getPdf();
-    }
-    // const description = "High";
-    // const result = await axios.put(
-    //   `${API}/update-validation/${stat}/${description}/${id}`
-    // );
-    // console.log(result.data);
-    // alert(
-    //   `${result.data.title} is being processed. \nDocument status: ${result.data.validationStatus}\nDocument description: ${result.data.validationDescription}`
-    // );
-    // getPdf();
   };
 
   // Delete a Document by ID
@@ -214,8 +191,8 @@ function App() {
   // Get the Results for a PDF Validation (TODO)
   const overrideValidationResults = async (id, pdf, title, status) => {
     const pdfDir = `${API}/files/${pdf}`;
-    if (status == "Accept") {
-      const stat = "Reject";
+    if (status == "Accepted") {
+      const stat = "Rejected";
       const description = "High";
       const result = await axios.put(
         `${API}/update-validation/${stat}/${description}/${id}`
@@ -224,11 +201,10 @@ function App() {
       alert(
         result.data.title +
           ` has been overriden to ` +
-          result.data.validationStatus +
-          `ed.`
+          result.data.validationStatus
       );
     } else if (status == "Reject") {
-      const stat2 = "Accept";
+      const stat2 = "Accepted";
       const description = "High";
       const result = await axios.put(
         `${API}/update-validation/${stat2}/${description}/${id}`
@@ -237,8 +213,7 @@ function App() {
       alert(
         result.data.title +
           ` has been overriden to ` +
-          result.data.validationStatus +
-          `ed.`
+          result.data.validationStatus
       );
     }
     getPdf();
@@ -368,8 +343,8 @@ function App() {
               >
                 <option selected value=""></option>
                 <option value="Unprocessed">Unprocessed</option>
-                <option value="Passed">Passed</option>
-                <option value="Failed">Failed</option>
+                <option value="Accepted">Accepted</option>
+                <option value="Rejected">Rejected</option>
               </select>
 
               <br /><br />
@@ -410,7 +385,7 @@ function App() {
                                 </button>{" "}
                                 &nbsp; &nbsp; &nbsp; &nbsp; Validation Status: &nbsp;
                                 <span
-                                  className={`badge text-bg-${data.validationStatus === "Accept" ? "success" : data.validationStatus === "Unprocessed" ? "warning" : "danger"}`}
+                                  className={`badge text-bg-${data.validationStatus === "Accepted" ? "success" : data.validationStatus === "Unprocessed" ? "warning" : "danger"}`}
                                 >
                                   {data.validationStatus}
                                 </span>
